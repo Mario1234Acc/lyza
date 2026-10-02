@@ -740,13 +740,13 @@ const CATEGORIES = [
 ];
 
 export default function App() {
-  const [selectedSubject, setSelectedSubject] = useState('all');
-  const [userAnswers, setUserAnswers] = useState({});
-  const [flaggedQuestions, setFlaggedQuestions] = useState(new Set());
+  const [selectedSubject, setSelectedSubject] = useState<string>('all');
+  const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
+  const [flaggedQuestions, setFlaggedQuestions] = useState<Set<number>>(new Set());
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [viewMode, setViewMode] = useState('list'); // 'list' or 'step'
+  const [viewMode, setViewMode] = useState<'list' | 'step'>('list'); // 'list' or 'step'
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
-  const [filterMode, setFilterMode] = useState('all'); // 'all', 'incorrect', 'correct', 'flagged'
+  const [filterMode, setFilterMode] = useState<string>('all'); // 'all', 'incorrect', 'correct', 'flagged'
   
   // Timer state - now defaults to NOT running automatically
   const [timeElapsed, setTimeElapsed] = useState(0);
@@ -765,19 +765,23 @@ export default function App() {
 
   // Timer logic
   useEffect(() => {
-    let interval = null;
+    let interval: ReturnType<typeof setInterval> | null = null;
+
     if (isTimerRunning && !isSubmitted) {
       interval = setInterval(() => {
         setTimeElapsed((prev) => prev + 1);
       }, 1000);
-    } else {
-      clearInterval(interval);
     }
-    return () => clearInterval(interval);
+
+    return () => {
+      if (interval) {
+        clearInterval(interval);
+      }
+    };
   }, [isTimerRunning, isSubmitted]);
 
   // Format seconds to mm:ss
-  const formatTime = (seconds) => {
+  const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
@@ -789,7 +793,7 @@ export default function App() {
   };
 
   // Handle option selection
-  const handleSelectOption = (questionId, optionId) => {
+  const handleSelectOption = (questionId: number, optionId: string) => {
     if (isSubmitted) return;
     setUserAnswers((prev) => ({
       ...prev,
@@ -798,7 +802,7 @@ export default function App() {
   };
 
   // Handle toggle flag
-  const toggleFlag = (questionId) => {
+  const toggleFlag = (questionId: number) => {
     setFlaggedQuestions((prev) => {
       const next = new Set(prev);
       if (next.has(questionId)) {
