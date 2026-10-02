@@ -14,12 +14,17 @@ import {
   Layers, 
   ListCheck, 
   HelpCircle,
-  RefreshCw
+  RefreshCw,
+  Play,
+  Pause,
+  FolderKanban
 } from 'lucide-react';
 
 const QUESTIONS_DATA = [
+  // --- Category: Dental Surgery & Anesthesia ---
   {
     id: 1,
+    category: 'surgery',
     question: "សំរាប់ការចាក់ Inferior Alveolar Nerve Block ត្រូវបានសំគាល់ដោយពាក្យ",
     options: [
       { id: 'a', text: "No Bone, No Injection" },
@@ -32,6 +37,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 2,
+    category: 'surgery',
     question: "Management for poorly uncontrolled hyperthyroidism is",
     options: [
       { id: 'a', text: "Avoid Surgical procedure" },
@@ -44,6 +50,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 3,
+    category: 'surgery',
     question: "Pulpal injection can be used as a sole injection technique",
     options: [
       { id: 'a', text: "True" },
@@ -54,6 +61,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 4,
+    category: 'surgery',
     question: "Maximum dose recommended for Articaine is",
     options: [
       { id: 'a', text: "7 mg/kg" },
@@ -66,6 +74,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 5,
+    category: 'surgery',
     question: "Mepivacaine អាចប្រើប្រាស់បានសំរាប់ស្ត្រីមានផ្ទៃពោះ",
     options: [
       { id: 'a', text: "True" },
@@ -76,6 +85,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 6,
+    category: 'surgery',
     question: "គុណសម្បត្តិរបស់ monofilament suture",
     options: [
       { id: 'a', text: "smooth surface" },
@@ -89,6 +99,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 7,
+    category: 'surgery',
     question: "តើការប្រើប្រាស់ថ្នាំស្ពឹក មានគោលបំណងអ្វី?",
     options: [
       { id: 'a', text: "Pain control" },
@@ -101,6 +112,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 8,
+    category: 'surgery',
     question: "The most use and frequent suturing technique is",
     options: [
       { id: 'a', text: "Interrupted suture" },
@@ -113,6 +125,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 9,
+    category: 'surgery',
     question: "ប្រសិនបើមានអាឡែហ្ស៊ីពេលដែលក្មេងកំពុងចាក់ បង្ការពីការប្រើប្រាស់ថ្នាំស្ពឹក",
     options: [
       { id: 'a', text: "True" },
@@ -123,6 +136,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 10,
+    category: 'surgery',
     question: "ចំនួនថ្នាំស្ពឹកដែលអាចប្រើប្រាស់លើក្មេងទំងន់ 20kg ដោយចាក់ 1.8ml Cartridge of lidocaine 2% With Adrenaline 1: 100,000",
     options: [
       { id: 'a', text: "2 Cartridges" },
@@ -134,6 +148,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 11,
+    category: 'surgery',
     question: "Articaine is recommended for Hypertensive patient",
     options: [
       { id: 'a', text: "True" },
@@ -144,6 +159,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 12,
+    category: 'surgery',
     question: "សំរាប់ការដកធ្មេញ Upper 1st Premolar យើងអាចប្រើប្រាស់បានចលនាទាំងអស់លើកលែងតែ",
     options: [
       { id: 'a', text: "Apical Pressure" },
@@ -155,9 +171,9 @@ const QUESTIONS_DATA = [
     correctAnswer: 'd',
     explanation: "Upper 1st Premolar ជាទូទៅមាន ឬស២ (Buccal & Palatal) និងមានចុងឬសតូចស្រួច ការប្រើ Rotational Pressure (ចលនាបង្វិល) នឹងធ្វើឱ្យបាក់ឬសធ្មេញ! ដូច្នេះត្រូវហាមឃាត់។"
   },
-
   {
     id: 13,
+    category: 'surgery',
     question: "Candidiasis is a disease which is possible caused from",
     options: [
       { id: 'a', text: "Well controlled diabetes" },
@@ -170,6 +186,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 14,
+    category: 'surgery',
     question: "Maximum dose recommended for Lidocaine is",
     options: [
       { id: 'a', text: "7 mg/kg" },
@@ -182,6 +199,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 15,
+    category: 'surgery',
     question: "Upper Molar Extraction Forcep មានទ្រង់ទ្រាយសំប៉ែត និងមានធ្មេញពីរក្នុង ចំពុះវា",
     options: [
       { id: 'a', text: "True" },
@@ -192,6 +210,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 16,
+    category: 'surgery',
     question: "Dental Extraction is contra-indicated except",
     options: [
       { id: 'a', text: "Recent Myocardial Infarction" },
@@ -205,6 +224,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 17,
+    category: 'surgery',
     question: "វិធីសាស្ត្រក្នុងការឃាត់ឈាម កំឡុងពេលដកធ្មេញ",
     options: [
       { id: 'a', text: "Pressure gauze" },
@@ -218,6 +238,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 18,
+    category: 'surgery',
     question: "Nasopalatine nerve block គឺចាក់សំរាប់ Anesthetize",
     options: [
       { id: 'a', text: "Buccal Tissue របស់ធ្មេញ anterior" },
@@ -229,6 +250,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 19,
+    category: 'surgery',
     question: "Universal forcep N150 ត្រូវបានប្រើសំរាប់ដកធ្មេញ",
     options: [
       { id: 'a', text: "Maxilla incisors and Premolars" },
@@ -241,6 +263,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 20,
+    category: 'surgery',
     question: "ទោះបីជា អ្នកជំងឺធ្លាប់មានប្រវត្តិកើតជំងឺ Myocardial Infarction ក្នុងរយៈពេល 6 ខែមុនប្រវត្តិក៏ដោយ ការព្យាបាលធ្មេញនៅតែអាចធ្វើធម្មតា",
     options: [
       { id: 'a', text: "True" },
@@ -251,6 +274,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 21,
+    category: 'surgery',
     question: "គ្រប់ Nerve block injection គប្បីត្រូវធ្វើ aspiration",
     options: [
       { id: 'a', text: "True" },
@@ -261,6 +285,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 22,
+    category: 'surgery',
     question: "Greater palatine nerve block គឺចាក់សំរាប់ Anesthetize",
     options: [
       { id: 'a', text: "Palatal tissue របស់ធ្មេញ Molars" },
@@ -272,6 +297,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 23,
+    category: 'surgery',
     question: "Lidocaine ធ្វើ Metabolism នៅក្នុង",
     options: [
       { id: 'a', text: "ថ្លើម" },
@@ -284,6 +310,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 24,
+    category: 'surgery',
     question: "If the root fractured is not infected and it is longer than 2mm, we can keep it the socket",
     options: [
       { id: 'a', text: "True" },
@@ -294,6 +321,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 25,
+    category: 'surgery',
     question: "Tongue can also be anesthetized by Vazirani-Akinosi nerve block injection",
     options: [
       { id: 'a', text: "True" },
@@ -302,9 +330,9 @@ const QUESTIONS_DATA = [
     correctAnswer: 'a',
     explanation: "True: Vazirani-Akinosi (Closed-mouth) technique ធ្វើឱ្យស្ពឹក Inferior Alveolar, Lingual, និង Mylohyoid nerves ដូច្នេះអណ្តាត (Lingual nerve) នឹងស្ពឹកដែរ។"
   },
-
   {
     id: 26,
+    category: 'surgery',
     question: "សំរាប់ការដកធ្មេញ Upper Anterior តើអ្នកជំងឺ Position របស់គាត់ប្រែមកខាងណា?",
     options: [
       { id: 'a', text: "Looking straight ahead" },
@@ -316,6 +344,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 27,
+    category: 'surgery',
     question: "Lower premolar can also be anesthetized by long buccal nerve block injection",
     options: [
       { id: 'a', text: "True" },
@@ -326,6 +355,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 28,
+    category: 'surgery',
     question: "LA Overdose អាចបង្កអោយមានគ្រោះថ្នាក់ដល់ជីវិតបាន",
     options: [
       { id: 'a', text: "True" },
@@ -336,6 +366,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 29,
+    category: 'surgery',
     question: "សំរាប់ការយកចេញ Root fragment ដែលបានបាក់យើងអាចប្រើ",
     options: [
       { id: 'a', text: "Root tip picks" },
@@ -347,6 +378,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 30,
+    category: 'surgery',
     question: "1/100,000 Anesthetic agent (Slight Lidocaine 1.8ml) បើប្រើ Epinephrine 1:100,000 មានចំនួន",
     options: [
       { id: 'a', text: "34 mg" },
@@ -359,6 +391,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 31,
+    category: 'surgery',
     question: "Caldwell-luc technique is to remove root/teeth in the sinus",
     options: [
       { id: 'a', text: "True" },
@@ -369,6 +402,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 32,
+    category: 'surgery',
     question: "សំរាប់ Pain and Anxiety control យើងអាចប្រើ",
     options: [
       { id: 'a', text: "General Anesthesia" },
@@ -381,6 +415,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 33,
+    category: 'surgery',
     question: "សំរាប់ការចាក់ Long buccal nerve block យើងប្រើប្រាស់ LA ចំនួន",
     options: [
       { id: 'a', text: "0.2ml-0.5ml" },
@@ -393,6 +428,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 34,
+    category: 'surgery',
     question: "អ្នកជំងឺម្នាក់មានជំងឺលើសឈាម (Hypertension) តែគាត់មិនបានលាបថ្នាំតាមវេជ្ជបញ្ជា គាត់ត្រូវបានចាត់ចូលក្រុម ASA",
     options: [
       { id: 'a', text: "ASA II" },
@@ -404,6 +440,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 35,
+    category: 'surgery',
     question: "ស្រ្តីមានគភ៌ខែពោះនៅខែទី3អាចធ្វើការដកធ្មេញបានដូច អ្នកជំងឺទូទៅដែរ",
     options: [
       { id: 'a', text: "True" },
@@ -414,6 +451,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 36,
+    category: 'surgery',
     question: "Surgical procedure can be performed in patient with poorly controlled diabetes",
     options: [
       { id: 'a', text: "True" },
@@ -424,6 +462,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 37,
+    category: 'surgery',
     question: "សំរាប់ការចាក់ Inferior Alveolar Nerve Block វាអាចអោយស្ពឹក Tissueទាំងអស់លើកលែងតែ",
     options: [
       { id: 'a', text: "Tongue" },
@@ -437,6 +476,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 38,
+    category: 'surgery',
     question: "Buccal Advancement flap is used to",
     options: [
       { id: 'a', text: "Close Oro-antral communication" },
@@ -449,6 +489,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 39,
+    category: 'surgery',
     question: "Maxillary tuberosity fracture is caused from",
     options: [
       { id: 'a', text: "Single and Isolated molar" },
@@ -461,6 +502,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 40,
+    category: 'surgery',
     question: "ជំងឺណាមួយដែលមិនបណ្តាលអោយមាន Xerostomia",
     options: [
       { id: 'a', text: "Diabetes" },
@@ -473,6 +515,7 @@ const QUESTIONS_DATA = [
   },
   {
     id: 41,
+    category: 'surgery',
     question: "មួយណាដែលមិនមែនជាគុណសម្បត្តិរបស់ multifilament suture",
     options: [
       { id: 'a', text: "good strength" },
@@ -482,22 +525,247 @@ const QUESTIONS_DATA = [
     ],
     correctAnswer: 'c',
     explanation: "Bacterial harbors (ការទាក់ទាញ និងផ្ដុំបាក់តេរី) គឺជា គុណវិបត្តិ (Disadvantage) របស់ Multifilament suture មិនមែនជាគុណសម្បត្តិឡើយ។"
+  },
+
+  // --- Category: Final Odontology II (Conservative Dentistry) ---
+  {
+    id: 42,
+    category: 'odontology',
+    question: "Surgical crown lengthening sometime is needed in order to manage subgingival caries",
+    options: [
+      { id: 'a', text: "True" },
+      { id: 'b', text: "False" }
+    ],
+    correctAnswer: 'a',
+    explanation: "True: Surgical crown lengthening provides necessary clinical crown height and exposes sound tooth margins above the biological width for proper restoration placement."
+  },
+  {
+    id: 43,
+    category: 'odontology',
+    question: "Bevel are the variation which are created during cavity preparation to help:",
+    options: [
+      { id: 'a', text: "prevent marginal leakage" },
+      { id: 'b', text: "Increasing retention" },
+      { id: 'c', text: "Make restoration stronger" },
+      { id: 'd', text: "A and B are correct" },
+      { id: 'e', text: "A, B, and C are correct" }
+    ],
+    correctAnswer: 'e',
+    explanation: "Bevels expose end-on enamel rods to enhance etch bonding, decrease microleakage, improve retention, and create smooth aesthetic transitions."
+  },
+  {
+    id: 44,
+    category: 'odontology',
+    question: "All these are examples of NCCL (Non-Carious Cervical Lesion) except",
+    options: [
+      { id: 'a', text: "Dental caries" },
+      { id: 'b', text: "Enamel hypoplasia" },
+      { id: 'c', text: "Tooth wear" },
+      { id: 'd', text: "Trauma" }
+    ],
+    correctAnswer: 'a',
+    explanation: "Dental caries is a bacterial infectious disease, whereas NCCLs include non-bacterial structural loss such as abrasion, erosion, abfraction, or wear."
+  },
+  {
+    id: 45,
+    category: 'odontology',
+    question: "Which clamp use for molar quadrant I and III",
+    options: [
+      { id: 'a', text: "12A" },
+      { id: 'b', text: "13A" },
+      { id: 'c', text: "#9" }
+    ],
+    correctAnswer: 'a',
+    explanation: "Rubber dam clamp #12A is designed with serrated jaws for upper right (Quad I) and lower left (Quad III) molars, while #13A is for Quad II & IV."
+  },
+  {
+    id: 46,
+    category: 'odontology',
+    question: "Which of the following materials has the best esthetic outcome?",
+    options: [
+      { id: 'a', text: "Composite" },
+      { id: 'b', text: "Amalgam" },
+      { id: 'c', text: "GIC" }
+    ],
+    correctAnswer: 'a',
+    explanation: "Composite resin provides superior shade matching, translucency, and polishability compared to Amalgam and Glass Ionomer Cement."
+  },
+  {
+    id: 47,
+    category: 'odontology',
+    question: "Unsupported enamel should be removed during cavity preparation",
+    options: [
+      { id: 'a', text: "True" },
+      { id: 'b', text: "False" }
+    ],
+    correctAnswer: 'a',
+    explanation: "True: Enamel rods not supported by underlying sound dentin are prone to fracture under heavy occlusal loads."
+  },
+  {
+    id: 48,
+    category: 'odontology',
+    question: "Interdental papilla and Gingival/Cervical embrasure are exactly the same thing",
+    options: [
+      { id: 'a', text: "True" },
+      { id: 'b', text: "False" }
+    ],
+    correctAnswer: 'b',
+    explanation: "False: Interdental papilla refers to the soft gingival tissue, whereas the cervical embrasure is the anatomical interproximal triangular space surrounding the contact point."
+  },
+  {
+    id: 49,
+    category: 'odontology',
+    question: "Flowable composite restorations can be easy to use and enhance esthetics, however they are weaker than condensable composite restorations",
+    options: [
+      { id: 'a', text: "True" },
+      { id: 'b', text: "False" }
+    ],
+    correctAnswer: 'a',
+    explanation: "True: Flowable composites contain lower filler loading (45-70%) to reduce viscosity, making them lower in wear resistance and compressive strength compared to packable composites."
+  },
+  {
+    id: 50,
+    category: 'odontology',
+    question: "The best position for patient during dental treatment is",
+    options: [
+      { id: 'a', text: "Supine (flat)" },
+      { id: 'b', text: "Upright" },
+      { id: 'c', text: "45% semi supine" }
+    ],
+    correctAnswer: 'a',
+    explanation: "The supine position (patient reclined flat with knees and head at nearly equal levels) is recommended for most routine operative procedures to optimize ergonomic access."
+  },
+  {
+    id: 51,
+    category: 'odontology',
+    question: "A prepared cavity is best protected from moisture during restoration placement by",
+    options: [
+      { id: 'a', text: "Cotton rolls" },
+      { id: 'b', text: "Saliva Ejector" },
+      { id: 'c', text: "Rubber dam" },
+      { id: 'd', text: "Paper napkin" },
+      { id: 'e', text: "All of the above" }
+    ],
+    correctAnswer: 'c',
+    explanation: "Rubber dam isolation provides the absolute gold standard for moisture control, tissue retraction, and contamination prevention."
+  },
+  {
+    id: 52,
+    category: 'odontology',
+    question: "Bulk Fill composite can be cured up to __mm per increment",
+    options: [
+      { id: 'a', text: "3" },
+      { id: 'b', text: "2" },
+      { id: 'c', text: "1" },
+      { id: 'd', text: "4" }
+    ],
+    correctAnswer: 'd',
+    explanation: "Bulk fill composites are translucent and engineered with photo-initiators that allow effective light curing up to 4mm (or 5mm) depth per layer."
+  },
+
+  // --- Category: Final Operative Dentistry I ---
+  {
+    id: 53,
+    category: 'operative',
+    question: "Glass Ionomer Cement (GIC) releases fluoride which helps prevent secondary caries",
+    options: [
+      { id: 'a', text: "True" },
+      { id: 'b', text: "False" }
+    ],
+    correctAnswer: 'a',
+    explanation: "True: GIC provides sustained fluoride release into adjacent tooth structure, creating a cariostatic effect and promoting remineralization."
+  },
+  {
+    id: 54,
+    category: 'operative',
+    question: "Acid etching on enamel creates micro-porosities for resin mechanical retention",
+    options: [
+      { id: 'a', text: "True" },
+      { id: 'b', text: "False" }
+    ],
+    correctAnswer: 'a',
+    explanation: "True: 37% Phosphoric acid selectively dissolves enamel hydroxyapatite crystals, creating microscopic resin tags for micromechanical anchorage."
+  },
+  {
+    id: 55,
+    category: 'operative',
+    question: "C-factor (Configuration factor) is defined as the ratio of bonded surfaces to unbonded surfaces in a restoration",
+    options: [
+      { id: 'a', text: "True" },
+      { id: 'b', text: "False" }
+    ],
+    correctAnswer: 'a',
+    explanation: "True: High C-factor (e.g., Class I cavity with 5 bonded to 1 unbonded surface = 5) increases polymerization shrinkage stress on cavity walls."
+  },
+  {
+    id: 56,
+    category: 'operative',
+    question: "Hybrid layer in dentin bonding is formed by penetration of adhesive resin into the etched collagen matrix",
+    options: [
+      { id: 'a', text: "True" },
+      { id: 'b', text: "False" }
+    ],
+    correctAnswer: 'a',
+    explanation: "True: Hydrophilic monomers infiltrate the demineralized collagen web, creating a micromechanical hybrid layer for dentin adhesion."
+  },
+  {
+    id: 57,
+    category: 'operative',
+    question: "G.V. Black Class II cavity preparation involves the proximal surfaces of anterior teeth",
+    options: [
+      { id: 'a', text: "True" },
+      { id: 'b', text: "False" }
+    ],
+    correctAnswer: 'b',
+    explanation: "False: Class II cavities involve the proximal surfaces of posterior teeth (premolars and molars). Class III/IV involve anterior teeth."
+  },
+  {
+    id: 58,
+    category: 'operative',
+    question: "Smear layer removal or modification is required before applying dentin bonding agent",
+    options: [
+      { id: 'a', text: "True" },
+      { id: 'b', text: "False" }
+    ],
+    correctAnswer: 'a',
+    explanation: "True: The smear layer created during rotary cut must be either dissolved (etch-and-rinse) or modified/penetrated (self-etch) to achieve adequate bonding."
   }
 ];
 
+const CATEGORIES = [
+  { id: 'all', name: 'សំណួរទាំងអស់ (All Quizzes)' },
+  { id: 'surgery', name: 'Dental Surgery & Anesthesia' },
+  { id: 'odontology', name: 'Final Odontology II' },
+  { id: 'operative', name: 'Final Operative Dentistry I' }
+];
+
 export default function App() {
-  const [userAnswers, setUserAnswers] = useState<Record<number, string | undefined>>({});
-  const [flaggedQuestions, setFlaggedQuestions] = useState<Set<number>>(new Set());
+  const [selectedSubject, setSelectedSubject] = useState('all');
+  const [userAnswers, setUserAnswers] = useState({});
+  const [flaggedQuestions, setFlaggedQuestions] = useState(new Set());
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [viewMode, setViewMode] = useState('list'); // 'list' or 'step'
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [filterMode, setFilterMode] = useState('all'); // 'all', 'incorrect', 'correct', 'flagged'
+  
+  // Timer state - now defaults to NOT running automatically
   const [timeElapsed, setTimeElapsed] = useState(0);
-  const [isTimerRunning, setIsTimerRunning] = useState(true);
+  const [isTimerRunning, setIsTimerRunning] = useState(false);
+
+  // Subject-filtered questions pool
+  const activeQuestionsPool = useMemo(() => {
+    if (selectedSubject === 'all') return QUESTIONS_DATA;
+    return QUESTIONS_DATA.filter(q => q.category === selectedSubject);
+  }, [selectedSubject]);
+
+  // Reset index when changing subject filter
+  useEffect(() => {
+    setCurrentStepIndex(0);
+  }, [selectedSubject]);
 
   // Timer logic
   useEffect(() => {
-    let interval: number | undefined;
+    let interval = null;
     if (isTimerRunning && !isSubmitted) {
       interval = setInterval(() => {
         setTimeElapsed((prev) => prev + 1);
@@ -509,14 +777,19 @@ export default function App() {
   }, [isTimerRunning, isSubmitted]);
 
   // Format seconds to mm:ss
-  const formatTime = (seconds: number): string => {
+  const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
+  // Toggle Timer Play/Pause
+  const toggleTimer = () => {
+    setIsTimerRunning(!isTimerRunning);
+  };
+
   // Handle option selection
-  const handleSelectOption = (questionId: number, optionId: string) => {
+  const handleSelectOption = (questionId, optionId) => {
     if (isSubmitted) return;
     setUserAnswers((prev) => ({
       ...prev,
@@ -525,7 +798,7 @@ export default function App() {
   };
 
   // Handle toggle flag
-  const toggleFlag = (questionId: number) => {
+  const toggleFlag = (questionId) => {
     setFlaggedQuestions((prev) => {
       const next = new Set(prev);
       if (next.has(questionId)) {
@@ -537,21 +810,21 @@ export default function App() {
     });
   };
 
-  // Compute total answered
-  const answeredCount = Object.keys(userAnswers).length;
-  const totalQuestions = QUESTIONS_DATA.length;
+  // Compute total answered in active pool
+  const answeredCount = activeQuestionsPool.filter(q => userAnswers[q.id] !== undefined).length;
+  const totalQuestions = activeQuestionsPool.length;
 
   // Calculate score upon submission
   const scoreResults = useMemo(() => {
     let correctCount = 0;
-    QUESTIONS_DATA.forEach((q) => {
+    activeQuestionsPool.forEach((q) => {
       if (userAnswers[q.id] === q.correctAnswer) {
         correctCount++;
       }
     });
-    const percentage = Math.round((correctCount / totalQuestions) * 100);
+    const percentage = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
     return { correctCount, percentage, total: totalQuestions };
-  }, [userAnswers, isSubmitted]);
+  }, [userAnswers, activeQuestionsPool, isSubmitted]);
 
   // Handle submit
   const handleSubmit = () => {
@@ -574,14 +847,15 @@ export default function App() {
       setIsSubmitted(false);
       setCurrentStepIndex(0);
       setTimeElapsed(0);
-      setIsTimerRunning(true);
+      setIsTimerRunning(false);
       setFilterMode('all');
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
+  // Filtered list based on correctness or flag
   const filteredQuestions = useMemo(() => {
-    return QUESTIONS_DATA.filter((q) => {
+    return activeQuestionsPool.filter((q) => {
       const isCorrect = userAnswers[q.id] === q.correctAnswer;
       const isFlagged = flaggedQuestions.has(q.id);
 
@@ -590,7 +864,7 @@ export default function App() {
       if (filterMode === 'flagged') return isFlagged;
       return true;
     });
-  }, [userAnswers, isSubmitted, filterMode, flaggedQuestions]);
+  }, [activeQuestionsPool, userAnswers, isSubmitted, filterMode, flaggedQuestions]);
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans antialiased pb-12">
@@ -603,19 +877,37 @@ export default function App() {
             </div>
             <div>
               <h1 className="text-lg font-bold text-slate-900 leading-tight">
-                Dental Surgery & Anesthesia Quiz
+                Dental Knowledge Quiz Platform
               </h1>
               <p className="text-xs text-slate-500 font-medium">
-                សំណួរត្រៀមប្រឡងដកធ្មេញ & ថ្នាំស្ពឹកទន្តសាស្ត្រ ({totalQuestions} សំណួរ)
+                សំណួរត្រៀមប្រឡង ({totalQuestions} សំណួរក្នុងកម្រងនេះ)
               </p>
             </div>
           </div>
 
           <div className="flex items-center gap-3">
-            {/* Timer Badge */}
-            <div className="flex items-center gap-1.5 bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-semibold">
-              <Clock className="w-4 h-4 text-indigo-600" />
-              <span>{formatTime(timeElapsed)}</span>
+            {/* Timer Control Button */}
+            <div className="flex items-center gap-2 bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-lg text-sm font-semibold">
+              <Clock className={`w-4 h-4 ${isTimerRunning ? 'text-emerald-600 animate-pulse' : 'text-slate-400'}`} />
+              <span className="font-mono">{formatTime(timeElapsed)}</span>
+              {!isSubmitted && (
+                <button
+                  onClick={toggleTimer}
+                  className={`ml-1 px-2 py-0.5 rounded text-xs font-bold text-white transition-all flex items-center gap-1 ${
+                    isTimerRunning ? 'bg-amber-500 hover:bg-amber-600' : 'bg-emerald-600 hover:bg-emerald-700'
+                  }`}
+                >
+                  {isTimerRunning ? (
+                    <>
+                      <Pause className="w-3 h-3" /> ផ្អាក
+                    </>
+                  ) : (
+                    <>
+                      <Play className="w-3 h-3" /> ចាប់ផ្តើម Timer
+                    </>
+                  )}
+                </button>
+              )}
             </div>
 
             {/* Mode Switcher (List vs Step) */}
@@ -652,14 +944,52 @@ export default function App() {
         <div className="w-full bg-slate-100 h-1.5">
           <div
             className="bg-indigo-600 h-full transition-all duration-300 ease-out"
-            style={{ width: `${(answeredCount / totalQuestions) * 100}%` }}
+            style={{ width: `${totalQuestions > 0 ? (answeredCount / totalQuestions) * 100 : 0}%` }}
           />
         </div>
       </header>
 
       {/* Main Container */}
       <main className="max-w-5xl mx-auto px-4 mt-6">
-        {}
+
+        {/* Subject / Exam Filter Bar */}
+        <div className="mb-6 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+          <div className="flex items-center gap-2 mb-2 text-slate-700 font-bold text-sm">
+            <FolderKanban className="w-4 h-4 text-indigo-600" />
+            <span>ជ្រើសរើសវិញ្ញាសាប្រឡង (Subject Filter):</span>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {CATEGORIES.map((cat) => {
+              const count = cat.id === 'all' 
+                ? QUESTIONS_DATA.length 
+                : QUESTIONS_DATA.filter(q => q.category === cat.id).length;
+              
+              const isActive = selectedSubject === cat.id;
+
+              return (
+                <button
+                  key={cat.id}
+                  disabled={isSubmitted}
+                  onClick={() => setSelectedSubject(cat.id)}
+                  className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                    isActive
+                      ? 'bg-indigo-600 text-white shadow-md'
+                      : 'bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200'
+                  } disabled:opacity-60`}
+                >
+                  <span>{cat.name}</span>
+                  <span className={`px-1.5 py-0.5 rounded-full text-[10px] ${
+                    isActive ? 'bg-indigo-800 text-white' : 'bg-slate-200 text-slate-700'
+                  }`}>
+                    {count}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Result Card when Submitted */}
         {isSubmitted && (
           <div className="bg-white rounded-2xl p-6 mb-8 border border-slate-200 shadow-md">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -699,7 +1029,7 @@ export default function App() {
                     <span className="font-bold text-slate-800">
                       {scoreResults.total}
                     </span>{' '}
-                    សំណួរ (រៀបរាប់ និងបង្ហាញចម្លើយត្រឹមត្រូវខាងក្រោម)
+                    សំណួរ
                   </p>
                   <p className="text-xs text-slate-400 mt-1">
                     រយៈពេលចំណាយ៖ {formatTime(timeElapsed)}
@@ -724,12 +1054,10 @@ export default function App() {
                 <Filter className="w-3.5 h-3.5" /> តម្រងមើល៖
               </span>
               {[
-                { id: 'all', label: `ទាំងអស់ (${QUESTIONS_DATA.length})` },
+                { id: 'all', label: `ទាំងអស់ (${totalQuestions})` },
                 {
                   id: 'incorrect',
-                  label: `ខុស (${
-                    QUESTIONS_DATA.length - scoreResults.correctCount
-                  })`
+                  label: `ខុស (${totalQuestions - scoreResults.correctCount})`
                 },
                 {
                   id: 'correct',
@@ -789,115 +1117,114 @@ export default function App() {
         {}
         {!isSubmitted && viewMode === 'step' ? (
           /* STEP-BY-STEP MODE */
-          <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-md">
-            {/* Question Header */}
-            <div className="flex items-start justify-between gap-4 mb-4">
-              <span className="inline-block bg-indigo-50 text-indigo-700 font-bold text-xs px-3 py-1 rounded-full border border-indigo-200">
-                សំណួរទី {currentStepIndex + 1} នៃ {totalQuestions}
-              </span>
-              <button
-                onClick={() =>
-                  toggleFlag(QUESTIONS_DATA[currentStepIndex].id)
-                }
-                className={`p-2 rounded-lg transition-all ${
-                  flaggedQuestions.has(QUESTIONS_DATA[currentStepIndex].id)
-                    ? 'bg-amber-100 text-amber-600'
-                    : 'bg-slate-100 text-slate-400 hover:text-amber-500'
-                }`}
-                title="ចំណាំសំណួរនេះ"
-              >
-                <Flag className="w-4 h-4 fill-current" />
-              </button>
-            </div>
-
-            <h2 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug mb-6">
-              {QUESTIONS_DATA[currentStepIndex].id}.{' '}
-              {QUESTIONS_DATA[currentStepIndex].question}
-            </h2>
-
-            {/* Options List */}
-            <div className="space-y-3 mb-8">
-              {QUESTIONS_DATA[currentStepIndex].options.map((opt) => {
-                const qId = QUESTIONS_DATA[currentStepIndex].id;
-                const isSelected = userAnswers[qId] === opt.id;
-                return (
-                  <button
-                    key={opt.id}
-                    onClick={() => handleSelectOption(qId, opt.id)}
-                    className={`w-full text-left p-4 rounded-xl border-2 transition-all flex items-center justify-between ${
-                      isSelected
-                        ? 'border-indigo-600 bg-indigo-50/50 text-indigo-900 shadow-sm'
-                        : 'border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-700'
-                    }`}
-                  >
-                    <div className="flex items-center gap-3">
-                      <span
-                        className={`w-7 h-7 rounded-lg flex items-center justify-center font-bold text-xs uppercase ${
-                          isSelected
-                            ? 'bg-indigo-600 text-white'
-                            : 'bg-slate-100 text-slate-600'
-                        }`}
-                      >
-                        {opt.id}
-                      </span>
-                      <span className="text-sm sm:text-base font-medium">
-                        {opt.text}
-                      </span>
-                    </div>
-                    {isSelected && (
-                      <CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" />
-                    )}
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* Step Navigation Controls */}
-            <div className="flex items-center justify-between pt-4 border-t border-slate-100">
-              <button
-                disabled={currentStepIndex === 0}
-                onClick={() => setCurrentStepIndex((prev) => prev - 1)}
-                className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 disabled:opacity-40 disabled:pointer-events-none transition-all"
-              >
-                <ChevronLeft className="w-4 h-4" />
-                ថយក្រោយ
-              </button>
-
-              <div className="text-xs text-slate-400 font-medium">
-                {currentStepIndex + 1} / {totalQuestions}
+          activeQuestionsPool.length > 0 ? (
+            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-md">
+              <div className="flex items-start justify-between gap-4 mb-4">
+                <span className="inline-block bg-indigo-50 text-indigo-700 font-bold text-xs px-3 py-1 rounded-full border border-indigo-200">
+                  សំណួរទី {currentStepIndex + 1} នៃ {totalQuestions}
+                </span>
+                <button
+                  onClick={() =>
+                    toggleFlag(activeQuestionsPool[currentStepIndex].id)
+                  }
+                  className={`p-2 rounded-lg transition-all ${
+                    flaggedQuestions.has(activeQuestionsPool[currentStepIndex].id)
+                      ? 'bg-amber-100 text-amber-600'
+                      : 'bg-slate-100 text-slate-400 hover:text-amber-500'
+                  }`}
+                  title="ចំណាំសំណួរនេះ"
+                >
+                  <Flag className="w-4 h-4 fill-current" />
+                </button>
               </div>
 
-              {currentStepIndex < totalQuestions - 1 ? (
+              <h2 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug mb-6">
+                {activeQuestionsPool[currentStepIndex].question}
+              </h2>
+
+              <div className="space-y-3 mb-8">
+                {activeQuestionsPool[currentStepIndex].options.map((opt) => {
+                  const qId = activeQuestionsPool[currentStepIndex].id;
+                  const isSelected = userAnswers[qId] === opt.id;
+                  return (
+                    <button
+                      key={opt.id}
+                      onClick={() => handleSelectOption(qId, opt.id)}
+                      className={`w-full text-left p-4 rounded-xl border-2 transition-all flex items-center justify-between ${
+                        isSelected
+                          ? 'border-indigo-600 bg-indigo-50/50 text-indigo-900 shadow-sm'
+                          : 'border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-700'
+                      }`}
+                    >
+                      <div className="flex items-center gap-3">
+                        <span
+                          className={`w-7 h-7 rounded-lg flex items-center justify-center font-bold text-xs uppercase ${
+                            isSelected
+                              ? 'bg-indigo-600 text-white'
+                              : 'bg-slate-100 text-slate-600'
+                          }`}
+                        >
+                          {opt.id}
+                        </span>
+                        <span className="text-sm sm:text-base font-medium">
+                          {opt.text}
+                        </span>
+                      </div>
+                      {isSelected && (
+                        <CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" />
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+
+              <div className="flex items-center justify-between pt-4 border-t border-slate-100">
                 <button
-                  onClick={() => setCurrentStepIndex((prev) => prev + 1)}
-                  className="flex items-center gap-2 px-5 py-2 rounded-xl text-sm font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow transition-all"
+                  disabled={currentStepIndex === 0}
+                  onClick={() => setCurrentStepIndex((prev) => prev - 1)}
+                  className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 disabled:opacity-40 disabled:pointer-events-none transition-all"
                 >
-                  បន្តទៅមុខ
-                  <ChevronRight className="w-4 h-4" />
+                  <ChevronLeft className="w-4 h-4" />
+                  ថយក្រោយ
                 </button>
-              ) : (
-                <button
-                  onClick={handleSubmit}
-                  className="flex items-center gap-2 px-5 py-2 rounded-xl text-sm font-bold bg-emerald-600 hover:bg-emerald-700 text-white shadow transition-all"
-                >
-                  <Check className="w-4 h-4" />
-                  បញ្ជូន
-                </button>
-              )}
+
+                <div className="text-xs text-slate-400 font-medium">
+                  {currentStepIndex + 1} / {totalQuestions}
+                </div>
+
+                {currentStepIndex < totalQuestions - 1 ? (
+                  <button
+                    onClick={() => setCurrentStepIndex((prev) => prev + 1)}
+                    className="flex items-center gap-2 px-5 py-2 rounded-xl text-sm font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow transition-all"
+                  >
+                    បន្តទៅមុខ
+                    <ChevronRight className="w-4 h-4" />
+                  </button>
+                ) : (
+                  <button
+                    onClick={handleSubmit}
+                    className="flex items-center gap-2 px-5 py-2 rounded-xl text-sm font-bold bg-emerald-600 hover:bg-emerald-700 text-white shadow transition-all"
+                  >
+                    <Check className="w-4 h-4" />
+                    បញ្ជូន
+                  </button>
+                )}
+              </div>
             </div>
-          </div>
+          ) : null
         ) : (
+          /* LIST MODE */
           <div className="space-y-6">
             {filteredQuestions.length === 0 ? (
               <div className="bg-white p-12 text-center rounded-2xl border border-slate-200 shadow-sm text-slate-500">
                 <HelpCircle className="w-12 h-12 mx-auto text-slate-300 mb-3" />
                 <p className="font-semibold text-lg">មិនមានសំណួរក្នុងតម្រងនេះទេ</p>
                 <p className="text-xs text-slate-400 mt-1">
-                  សូមជ្រើសរើសប្រភេទតម្រងផ្សេងទៀត។
+                  សូមជ្រើសរើសប្រភេទតម្រង ឬប្រធានបទផ្សេងទៀត។
                 </p>
               </div>
             ) : (
-              filteredQuestions.map((q) => {
+              filteredQuestions.map((q, idx) => {
                 const selectedOpt = userAnswers[q.id];
                 const isCorrect = selectedOpt === q.correctAnswer;
                 const isFlagged = flaggedQuestions.has(q.id);
@@ -916,11 +1243,10 @@ export default function App() {
                         : 'border-slate-200 hover:border-slate-300'
                     }`}
                   >
-                    {/* Header per question */}
                     <div className="flex items-start justify-between gap-4 mb-3">
                       <div className="flex items-center gap-2">
                         <span className="font-bold text-xs px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 border border-slate-200">
-                          សំណួរ {q.id}
+                          សំណួរ #{idx + 1}
                         </span>
                         {isSubmitted && (
                           <span
@@ -962,7 +1288,6 @@ export default function App() {
                       {q.question}
                     </h3>
 
-                    {/* Options list */}
                     <div className="grid grid-cols-1 gap-2.5">
                       {q.options.map((opt) => {
                         const isThisSelected = selectedOpt === opt.id;
@@ -1012,7 +1337,6 @@ export default function App() {
                               </span>
                             </div>
 
-                            {/* Status Icon */}
                             <div className="shrink-0 ml-2">
                               {isSubmitted ? (
                                 isThisCorrect ? (
@@ -1031,7 +1355,6 @@ export default function App() {
                       })}
                     </div>
 
-                    {/* Explanation Box (Visible after submission) */}
                     {isSubmitted && q.explanation && (
                       <div className="mt-4 p-4 rounded-xl bg-slate-100 border border-slate-200 text-xs sm:text-sm text-slate-700 flex items-start gap-3">
                         <AlertCircle className="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" />
@@ -1050,7 +1373,7 @@ export default function App() {
           </div>
         )}
 
-        {/* Floating Bottom Action Bar for List Mode when not submitted */}
+        {/* Floating Bottom Action Bar for List Mode */}
         {!isSubmitted && viewMode === 'list' && (
           <div className="fixed bottom-4 left-0 right-0 z-20 px-4">
             <div className="max-w-md mx-auto bg-slate-900/90 backdrop-blur-md text-white p-3 rounded-2xl shadow-xl flex items-center justify-between border border-slate-700">
