@@ -3,739 +3,698 @@ import type { QuizQuestion } from './types';
 export const operativeQuizQuestions: QuizQuestion[] = [
   {
     id: 1,
-    category: 'Diagnosis & Anatomy',
-    question: 'All of the following lymphnode are found in head and neck area except',
+    category: 'Operative Dentistry',
+    question: 'All of the following lymph node are found in head and neck area except',
     options: [
-      { id: 'a', text: 'preauricular' },
-      { id: 'b', text: 'supraclavicular' },
-      { id: 'c', text: 'deep cervical' },
+      { id: 'a', text: 'Submandibular' },
+      { id: 'b', text: 'Cervical' },
+      { id: 'c', text: 'Submental' },
       { id: 'd', text: 'axillary' }
     ],
     correctAnswer: 'd',
-    explanation:
-      'Axillary lymph nodes are located in the armpit region, whereas preauricular, supraclavicular, and deep cervical lymph nodes are located in the head and neck region.'
+    explanation: 'Axillary lymph nodes are located in the armpit area, not in the head and neck[cite: 2].'
   },
   {
     id: 2,
-    category: 'Dental Charting & Symbols',
-    question: 'Please chose a correct meaning for symbol in the picture?',
+    category: 'Operative Dentistry',
+    question: 'Please choose a correct meaning for symbol in the picture?',
     options: [
-      { id: 'a', text: 'Composite filling' },
-      { id: 'b', text: 'Metal crown' },
+      { id: 'a', text: 'Full metal crown' },
+      { id: 'b', text: 'Porcelain fused to metal crown' },
       { id: 'c', text: 'Tooth color crown' },
-      { id: 'd', text: 'Amalgam filling' }
+      { id: 'd', text: 'Temporary crown' }
     ],
     correctAnswer: 'c',
-    explanation:
-      'In standard dental charting, green diagonal lines covering the full crown represent a tooth-colored crown restoration.'
+    explanation: 'Green hatched circle with crown outline represents a tooth color crown[cite: 2].'
   },
   {
     id: 3,
-    category: 'Caries Diagnosis & Charting',
+    category: 'Operative Dentistry',
     question: 'If tooth present with ICDAS code 5-6, what should be written on dental chart?',
     options: [
       { id: 'a', text: 'A (blue)' },
-      { id: 'b', text: 'B (red)' },
-      { id: 'c', text: 'C (blue)' },
+      { id: 'b', text: 'A (red)' },
+      { id: 'c', text: 'B (red)' },
       { id: 'd', text: 'B (blue)' }
     ],
     correctAnswer: 'd',
-    explanation:
-      'ICDAS code 5-6 represents distinct or extensive cavities with visible dentine, charted under symbol B in blue for definitive treatment planning.'
+    explanation: 'Extensive cavities with visible dentin (ICDAS 5-6) are charted as B (blue)[cite: 2].'
   },
   {
     id: 4,
-    category: 'Diagnosis & Treatment Planning',
-    question: 'Surgical crown lengthening sometime is needed in order to manage subgingival caries',
+    category: 'Operative Dentistry',
+    question: 'What is the purpose of percussion test?',
     options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
+      { id: 'a', text: 'Periapical condition' },
+      { id: 'b', text: 'Pulpal status' },
+      { id: 'c', text: 'Periodontal probing depth' },
+      { id: 'd', text: 'Tooth mobility' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Surgical crown lengthening exposes sound tooth structure apical to subgingival caries margins to allow proper isolation and restoration.'
+    explanation: 'Percussion test is primarily used to evaluate inflammation in the periapical tissues[cite: 2].'
   },
   {
     id: 5,
-    category: 'Cavity Preparation & Classification',
-    question: 'Bevel are the variation which are created during cavity preparation to help:',
+    category: 'Operative Dentistry',
+    question: 'Please choose a correct meaning for symbol in the picture?',
     options: [
-      { id: 'a', text: 'prevent marginal leakage' },
-      { id: 'b', text: 'Increasing retention' },
-      { id: 'c', text: 'Make restoration stronger' },
-      { id: 'd', text: 'A and B are correct' },
-      { id: 'e', text: 'A, B, and C are correct' }
+      { id: 'a', text: 'Root canal therapy needed' },
+      { id: 'b', text: 'Root canal treated' },
+      { id: 'c', text: 'Pulpotomy' },
+      { id: 'd', text: 'Post and core' }
     ],
-    correctAnswer: 'd',
-    explanation:
-      'Bevels increase bonding surface area, improving retention and reducing marginal leakage in adhesive restorations.'
+    correctAnswer: 'b',
+    explanation: 'Blue filling inside the root canal indicates a completed root canal treatment[cite: 2].'
   },
   {
     id: 6,
-    category: 'Diagnosis & Treatment Planning',
-    question: 'All these are examples of NCCL except',
+    category: 'Operative Dentistry',
+    question: 'Basic Periodontal Examination: code 0',
     options: [
-      { id: 'a', text: 'Dental caries' },
-      { id: 'b', text: 'Enamel hypoplasia' },
-      { id: 'c', text: 'Tooth wear' },
-      { id: 'd', text: 'Trauma' }
+      { id: 'a', text: 'No pocket>3.5mm, no calculus/overhangs, no bleeding after probing' },
+      { id: 'b', text: 'No pocket>3.5mm, no calculus/overhangs, bleeding after probing' },
+      { id: 'c', text: 'No pocket>3.5mm, supra or subgingival calculus/overhangs' },
+      { id: 'd', text: 'Pocket depth 3.5-5.5mm' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'NCCL stands for Non-Carious Cervical Lesions (e.g., abrasion, erosion, abfraction). Dental caries is a carious lesion.'
+    explanation: 'BPE code 0 represents healthy periodontal tissue with probing depth < 3.5mm and no bleeding or calculus[cite: 2].'
   },
   {
     id: 7,
-    category: 'Restorative Materials & Isolation',
-    question: 'Which clamp use for molar quadrant I and III',
+    category: 'Operative Dentistry',
+    question: "Where is the location of Stensen's duct opening?",
     options: [
-      { id: 'a', text: '12A' },
-      { id: 'b', text: '13A' },
-      { id: 'c', text: '#9' }
+      { id: 'a', text: 'Opposite to upper first molar' },
+      { id: 'b', text: 'Opposite to lower second molar' },
+      { id: 'c', text: 'Opposite to upper second molar' },
+      { id: 'd', text: 'Sublingual caruncle' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Rubber dam clamp 12A is specifically designed with serrated jaws for upper right (Quadrant I) and lower left (Quadrant III) molars.'
+    correctAnswer: 'c',
+    explanation: "Stensen's duct (parotid gland duct) opens into the oral cavity opposite the maxillary second molar[cite: 2]."
   },
   {
     id: 8,
-    category: 'Restorative Materials & Isolation',
-    question: 'Which of the following materials has the best esthetic outcome?',
+    category: 'Operative Dentistry',
+    question: 'ICDAS Radiograph system (proximal): code 5',
     options: [
-      { id: 'a', text: 'Composite' },
-      { id: 'b', text: 'Amalgam' },
-      { id: 'c', text: 'GIC' }
+      { id: 'a', text: 'Radiolucency limit to outer 1/3 of dentin' },
+      { id: 'b', text: 'Radiolucency reaching to middle 1/3 of dentin' },
+      { id: 'c', text: 'Radiolucency reaching to inner 1/3 of dentin, clinically cavitated' },
+      { id: 'd', text: 'Radiolucency into pulp, clinically cavitated' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Composite resins match natural tooth shades, translucency, and polishability better than GIC or metallic amalgam.'
+    correctAnswer: 'c',
+    explanation: 'Radiographic ICDAS code 5 indicates radiolucency extending into the inner third of dentin[cite: 2].'
   },
   {
     id: 9,
-    category: 'Cavity Preparation & Classification',
-    question: 'Unsupported enamel should be removed during cavity preparation',
+    category: 'Operative Dentistry',
+    question: 'Class II malocclusion',
     options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
+      { id: 'a', text: 'Maxillary mesiobuccal cusp aligns with mandibular buccal groove' },
+      { id: 'b', text: 'Maxillary mesiobuccal cusp is anterior to the buccal groove of mandibular first molar' },
+      { id: 'c', text: 'Maxillary mesiobuccal cusp is posterior to the buccal groove of mandibular first molar' },
+      { id: 'd', text: 'Edge-to-edge incisor relationship' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Unsupported enamel prisms are prone to fracture under occlusal forces and should be removed or supported by adhesive materials.'
+    correctAnswer: 'b',
+    explanation: 'In Class II malocclusion, the maxillary molar is positioned anteriorly relative to the mandibular molar[cite: 2].'
   },
   {
     id: 10,
-    category: 'Diagnosis & Treatment Planning',
-    question: 'Interdental papilla and Gingival/Cervical embrasure are exactly the same thing',
+    category: 'Operative Dentistry',
+    question: 'Which of the following papillaes have the least amount on tongue?',
     options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
+      { id: 'a', text: 'Filiform Papillae' },
+      { id: 'b', text: 'Fungiform Papillae' },
+      { id: 'c', text: 'Foliate Papillae' },
+      { id: 'd', text: 'Circumvallet Papillae' }
     ],
-    correctAnswer: 'b',
-    explanation:
-      'The cervical embrasure is the anatomical interproximal space apical to the contact point, whereas the interdental papilla is the soft tissue occupant of that space.'
+    correctAnswer: 'd',
+    explanation: 'Circumvallate papillae are the largest but least numerous papillae on the tongue (usually 8-12)[cite: 2].'
   },
   {
     id: 11,
-    category: 'Restorative Materials & Isolation',
-    question:
-      'Flowable composite restorations can be easy to use and enhance esthetics, however they are weaker than condensable composite restorations',
+    category: 'Operative Dentistry',
+    question: 'Which of the following statement are true regarding to C fiber?',
     options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
+      { id: 'a', text: 'Sharp & fast pain, low threshold' },
+      { id: 'b', text: 'Sharp & fast pain, high threshold' },
+      { id: 'c', text: 'Throbbing & prolong pain, high threshold' },
+      { id: 'd', text: 'Throbbing & prolong pain, low threshold' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Flowable composites have lower filler content, resulting in lower mechanical strength and higher polymerization shrinkage than packable composites.'
+    correctAnswer: 'c',
+    explanation: 'C fibers are unmyelinated nerve fibers transmitting slow, dull, throbbing, long-lasting pain with a high threshold[cite: 2].'
   },
   {
     id: 12,
-    category: 'Dental Ergonomics & General',
-    question: 'The best position for patient during dental treatment is',
+    category: 'Operative Dentistry',
+    question: 'If tooth present with ICDAS code 1-2, what should be written on dental chart?',
     options: [
-      { id: 'a', text: 'Supine (flat)' },
-      { id: 'b', text: 'Upright' },
-      { id: 'c', text: '45% semi supine' }
+      { id: 'a', text: 'A (blue)' },
+      { id: 'b', text: 'A (red)' },
+      { id: 'c', text: 'B (blue)' },
+      { id: 'd', text: 'B (red)' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Supine position is generally recommended for operating on the maxillary arch and standard ergonomic positioning.'
+    explanation: 'Early non-cavitated enamel lesions (ICDAS 1-2) are designated as A (blue)[cite: 2].'
   },
   {
     id: 13,
-    category: 'Restorative Materials & Isolation',
-    question: 'A prepared cavity is best protected from moisture during restoration placement by',
+    category: 'Operative Dentistry',
+    question: 'What is the average of overjet?',
     options: [
-      { id: 'a', text: 'Cotton rolls' },
-      { id: 'b', text: 'Saliva Ejector' },
-      { id: 'c', text: 'Rubber dam' },
-      { id: 'd', text: 'Paper napkin' },
-      { id: 'e', text: 'All of the above' }
+      { id: 'a', text: '0-1mm' },
+      { id: 'b', text: '2-3mm' },
+      { id: 'c', text: '4-5mm' },
+      { id: 'd', text: '5-6mm' }
     ],
-    correctAnswer: 'c',
-    explanation:
-      'Rubber dam is the gold standard for absolute isolation, preventing saliva, moisture, and breath humidity from contaminating the cavity.'
+    correctAnswer: 'b',
+    explanation: 'Normal ideal horizontal overlap (overjet) is between 2 to 3 mm[cite: 2].'
   },
   {
     id: 14,
-    category: 'Restorative Materials & Isolation',
-    question: 'Bulk Fill composite can be cured up to __mm per increment',
+    category: 'Operative Dentistry',
+    question: 'ICDAS visual system (occlusal): code 5',
     options: [
-      { id: 'a', text: '3' },
-      { id: 'b', text: '2' },
-      { id: 'c', text: '1' },
-      { id: 'd', text: '4' }
+      { id: 'a', text: 'Localized enamel breakdown' },
+      { id: 'b', text: 'Distinct cavity with visible dentin' },
+      { id: 'c', text: 'Extensive distinct cavity with visible dentin' },
+      { id: 'd', text: 'Distinct visual change in enamel' }
     ],
-    correctAnswer: 'd',
-    explanation:
-      'Bulk fill composite resins are specially formulated with higher translucency and photo-initiators allowing incremental curing up to 4 mm.'
+    correctAnswer: 'b',
+    explanation: 'ICDAS visual code 5 corresponds to a distinct cavity with visible dentin[cite: 2].'
   },
   {
     id: 15,
-    category: 'Cavity Preparation & Classification',
-    question: 'How many walls of the cavity class I?',
+    category: 'Operative Dentistry',
+    question: 'Basic Periodontal Examination: code 1',
     options: [
-      { id: 'a', text: '3' },
-      { id: 'b', text: '4' },
-      { id: 'c', text: '5' },
-      { id: 'd', text: '6' }
+      { id: 'a', text: 'no pocket> 3.5mm, no calculus/overhangs, no bleeding' },
+      { id: 'b', text: 'no pocket> 3.5mm, no calculus/overhangs, but bleeding after probing' },
+      { id: 'c', text: 'no pocket> 3.5mm, calculus or overhang present' },
+      { id: 'd', text: 'Pocket depth >5.5mm' }
     ],
-    correctAnswer: 'c',
-    explanation:
-      'A standard simple Class I occlusal cavity preparation has 5 walls: Mesial, Distal, Buccal, Lingual, and Pulpal floor.'
+    correctAnswer: 'b',
+    explanation: 'BPE code 1 indicates probing depth < 3.5mm with bleeding on probing, but no calculus or overhangs[cite: 2].'
   },
   {
     id: 16,
-    category: 'Restorative Materials & Isolation',
-    question: 'What is the aim of Isolation?',
+    category: 'Operative Dentistry',
+    question: 'ICDAS Radiograph system (proximal): code 2',
     options: [
-      { id: 'a', text: 'Moisture control' },
-      { id: 'b', text: 'Retraction' },
-      { id: 'c', text: 'Prevent swallowing material and instrument' },
-      { id: 'd', text: 'All of the above' }
+      { id: 'a', text: 'Radiolucency in outer-half of enamel' },
+      { id: 'b', text: 'Radiolucency in inner-half of enamel ±DEJ' },
+      { id: 'c', text: 'Radiolucency limit to outer 1/3 of dentin' },
+      { id: 'd', text: 'Radiolucency reaching to middle 1/3 of dentin' }
     ],
-    correctAnswer: 'd',
-    explanation:
-      'Isolation achieves moisture control, soft tissue retraction, visual clarity, and patient safety from accidental aspiration.'
+    correctAnswer: 'b',
+    explanation: 'Radiographic ICDAS code 2 indicates radiolucency in the inner half of enamel up to the dentinoenamel junction[cite: 2].'
   },
   {
     id: 17,
-    category: 'Restorative Materials & Isolation',
-    question:
-      'Which of the following restorations require mechanical retention (undercut) preparation to lock the restoration in the cavity?',
+    category: 'Operative Dentistry',
+    question: 'Class III malocclusion',
     options: [
-      { id: 'a', text: 'Composite' },
-      { id: 'b', text: 'Amalgam' },
-      { id: 'c', text: 'GIC' }
+      { id: 'a', text: 'Normal molar relationship' },
+      { id: 'b', text: 'Mandibular molar is distal to maxillary molar' },
+      { id: 'c', text: 'Mandibular first molar positioned mesially/anteriorly relative to maxillary first molar' },
+      { id: 'd', text: 'Open bite relationship' }
     ],
-    correctAnswer: 'b',
-    explanation:
-      'Amalgam does not bond adhesively to tooth structure and relies strictly on mechanical retention features like undercuts.'
+    correctAnswer: 'c',
+    explanation: 'Class III malocclusion occurs when the mandibular molar is positioned anterior/mesial relative to the maxillary molar[cite: 2].'
   },
   {
     id: 18,
-    category: 'Cavity Preparation & Classification',
-    question: 'The high speed round bur is best for removing soft caries in the dentin',
+    category: 'Operative Dentistry',
+    question: 'Basic Periodontal Examination: code 4',
     options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
+      { id: 'a', text: 'Pocket depth <3.5mm' },
+      { id: 'b', text: 'Pocket depth 3.5-5.5mm' },
+      { id: 'c', text: 'Furcation involvement' },
+      { id: 'd', text: 'Pocket dept >5.5mm' }
     ],
-    correctAnswer: 'b',
-    explanation:
-      'Low speed round burs or hand excavators are preferred for soft dentine caries removal to prevent over-preparation and pulpal exposure.'
+    correctAnswer: 'd',
+    explanation: 'BPE code 4 represents deep periodontal pockets exceeding 5.5mm[cite: 2].'
   },
   {
     id: 19,
-    category: 'Cavity Preparation & Classification',
-    question: 'Carious process effected proximal (Mesial and Distal) surfaces of the posterior teeth',
+    category: 'Operative Dentistry',
+    question: 'ICDAS Radiograph system (proximal): code 6',
     options: [
-      { id: 'a', text: 'Class I' },
-      { id: 'b', text: 'Class II' },
-      { id: 'c', text: 'Class III' },
-      { id: 'd', text: 'Class IV' },
-      { id: 'e', text: 'Class V' }
+      { id: 'a', text: 'Radiolucency in inner-half of enamel' },
+      { id: 'b', text: 'Radiolucency reaching to middle 1/3 of dentin' },
+      { id: 'c', text: 'Radiolucency reaching to inner 1/3 of dentin' },
+      { id: 'd', text: 'Radiolucency into pulp, clinically cavitated' }
     ],
-    correctAnswer: 'b',
-    explanation:
-      "Black's Class II cavities involve the proximal surfaces (mesial/distal) of posterior teeth (premolars and molars)."
+    correctAnswer: 'd',
+    explanation: 'Radiographic ICDAS code 6 indicates extensive radiolucency extending into the pulp[cite: 2].'
   },
   {
     id: 20,
-    category: 'Restorative Materials & Isolation',
-    question: 'Which of the following material has a fluoride releasing property?',
+    category: 'Operative Dentistry',
+    question: 'Patient come with pain on #21, moderate gingival swelling, poor oral hygiene, many white spots, caries #21,11,15,16. What is the appropriate treatment plan?',
     options: [
-      { id: 'a', text: 'Composite' },
-      { id: 'b', text: 'Amalgam' },
-      { id: 'c', text: 'GIC' }
+      { id: 'a', text: 'Extraction of all decayed teeth and full denture' },
+      { id: 'b', text: 'Fluoride varnish only and recall in 6 months' },
+      { id: 'c', text: 'Treatment plan by visit: Endo#21, Scaling & prophy, fluoride vanish, filling. Home care: OHI, Chlorhexidine mouthrise for 1 week' },
+      { id: 'd', text: 'Fillings on all teeth in first visit, then endo on #21' }
     ],
     correctAnswer: 'c',
-    explanation:
-      'Glass Ionomer Cement (GIC) releases fluoride over time, aiding in remineralization and preventing secondary caries.'
+    explanation: 'Urgent pain/infection is managed first with endodontic treatment, followed by preventive care, hygiene, and restorations[cite: 2].'
   },
   {
     id: 21,
-    category: 'Cavity Preparation & Classification',
-    question: 'A tunnel preparation is suitable for which situation?',
+    category: 'Operative Dentistry',
+    question: 'All of these can be seen on Bitewing radiograph except',
     options: [
-      { id: 'a', text: 'Occlusal caries' },
-      { id: 'b', text: 'Proximal caries on an incisor' },
-      { id: 'c', text: 'Deep proximal caries (R5-6) on a molar' },
-      { id: 'd', text: 'Shallow proximal caries (R4) on a premolar' },
-      { id: 'e', text: 'All of the above' }
+      { id: 'a', text: 'Interproximal caries' },
+      { id: 'b', text: 'Alveolar crest height' },
+      { id: 'c', text: 'Crown restorations' },
+      { id: 'd', text: 'Apex' }
     ],
     correctAnswer: 'd',
-    explanation:
-      'Tunnel preparation is a conservative approach intended for small, shallow proximal lesions in posterior teeth while preserving the marginal ridge.'
+    explanation: 'Bitewing radiographs focus on crowns and alveolar crests; root apices are routinely visualized on periapical films[cite: 2].'
   },
   {
     id: 22,
-    category: 'Diagnosis & Treatment Planning',
-    question: 'Enamel is more resistant to the progress of dental caries than dentine',
+    category: 'Operative Dentistry',
+    question: 'What is the average overbite?',
     options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
+      { id: 'a', text: '0-10%' },
+      { id: 'b', text: '20-30%' },
+      { id: 'c', text: '50-60%' },
+      { id: 'd', text: '70-80%' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Enamel is 96% mineralized hydroxyapatite and resists acid dissolution much longer than organic-rich dentine (70% mineralized).'
+    correctAnswer: 'b',
+    explanation: 'Normal ideal vertical overlap (overbite) covers approximately 20-30% of the mandibular central incisors[cite: 2].'
   },
   {
     id: 23,
-    category: 'Diagnosis & Treatment Planning',
-    question: 'Subgingival caries and root caries are the same thing',
+    category: 'Operative Dentistry',
+    question: 'Plaque index: when half of tooth surface is covered by plaque. What code do you give?',
     options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
+      { id: 'a', text: 'Code 0' },
+      { id: 'b', text: 'Code 1' },
+      { id: 'c', text: 'Code 2' },
+      { id: 'd', text: 'Code 3' }
     ],
-    correctAnswer: 'b',
-    explanation:
-      'Subgingival caries refers to location below the free gingival margin, while root caries refers specifically to lesions originating on root surface.'
+    correctAnswer: 'c',
+    explanation: 'Plaque accumulation covering up to one-half of the tooth surface corresponds to Code 2[cite: 2].'
   },
   {
     id: 24,
-    category: 'Restorative Materials & Isolation',
-    question: 'Which of the following is/are an indication for GIC usage?',
+    category: 'Operative Dentistry',
+    question: 'Interpretation of Plaque index: Poor hygiene',
     options: [
-      { id: 'a', text: 'Class I, III and Class V restorations' },
-      { id: 'b', text: 'Indirect restoration cementation' },
-      { id: 'c', text: 'Fissure Sealing' },
-      { id: 'd', text: 'Pulp protection' },
-      { id: 'e', text: 'Community school programs' },
-      { id: 'f', text: 'All of the above' }
+      { id: 'a', text: 'Score 0' },
+      { id: 'b', text: 'Score 2.0-3.0' },
+      { id: 'c', text: 'Score 1.0-1.9' },
+      { id: 'd', text: 'Score 0.1-0.9' }
     ],
-    correctAnswer: 'f',
-    explanation:
-      'GIC is versatile and used for restorative fillings, luting cement, sealants, liners/bases, and ART in community health.'
+    correctAnswer: 'b',
+    explanation: 'A plaque index mean score between 2.0 and 3.0 indicates poor oral hygiene[cite: 2].'
   },
   {
     id: 25,
-    category: 'Restorative Materials & Isolation',
-    question: 'To minimize composite shrinkage during light curing, which of the following methods is not effective?',
+    category: 'Operative Dentistry',
+    question: 'Medical history should include all the following except',
     options: [
-      { id: 'a', text: 'Incremental placement' },
-      { id: 'b', text: 'maximum 2mm of each incremental layer' },
-      { id: 'c', text: 'increase light cure duration' }
+      { id: 'a', text: 'Systemic diseases' },
+      { id: 'b', text: 'Allergies' },
+      { id: 'c', text: 'Job' },
+      { id: 'd', text: 'Current medications' }
     ],
     correctAnswer: 'c',
-    explanation:
-      'Increasing cure duration increases total conversion but does not reduce volumetric shrinkage; incremental layering reduces shrinkage stress.'
+    explanation: 'Occupation/Job is part of personal/demographic history, not medical history[cite: 2].'
   },
   {
     id: 26,
-    category: 'Cavity Preparation & Classification',
-    question: 'To make a good shape of cavity preparation requires:',
+    category: 'Operative Dentistry',
+    question: 'Please choose a correct meaning for symbol in the picture?',
     options: [
-      { id: 'a', text: 'Knowledge of anatomy' },
-      { id: 'b', text: 'Depth control' },
-      { id: 'c', text: 'Angulation control' },
-      { id: 'd', text: 'A and B are correct' },
-      { id: 'e', text: 'A, B, and C are correct' }
+      { id: 'a', text: 'Missing tooth' },
+      { id: 'b', text: 'Extracted tooth' },
+      { id: 'c', text: 'Impacted tooth' },
+      { id: 'd', text: 'Unerupted tooth' }
     ],
-    correctAnswer: 'e',
-    explanation:
-      'Proper cavity preparation requires understanding tooth anatomy, precise depth control, and bur angulation to preserve tooth structure.'
+    correctAnswer: 'c',
+    explanation: 'The abbreviation IMP on a charted tooth denotes an impacted tooth[cite: 2].'
   },
   {
     id: 27,
-    category: 'Restorative Materials & Isolation',
-    question: 'A contraindication for placing a GIC pit and fissure sealant is',
+    category: 'Operative Dentistry',
+    question: 'Basic Periodontal Examination: code 2',
     options: [
-      { id: 'a', text: 'Caries code 1' },
-      { id: 'b', text: 'Sound Tooth' },
-      { id: 'c', text: 'Caries code 4' }
+      { id: 'a', text: 'No pocket> 3.5mm, no calculus' },
+      { id: 'b', text: 'Bleeding on probing only' },
+      { id: 'c', text: 'No pocket> 3.5mm, but supra or subgingival calculus/ overhangs' },
+      { id: 'd', text: 'Pocket depth > 5.5mm' }
     ],
     correctAnswer: 'c',
-    explanation:
-      'ICDAS Code 4 indicates underlying dark shadow from dentine with or without localized enamel breakdown, requiring operative restoration rather than a sealant.'
+    explanation: 'BPE code 2 is assigned when plaque retention factors like calculus or overhangs are present without pockets >3.5mm[cite: 2].'
   },
   {
     id: 28,
-    category: 'Dental Ergonomics & General',
-    question: 'Good posture during dental treatment can minimize fatigue for dentist',
+    category: 'Operative Dentistry',
+    question: 'If tooth present with ICDAS code 3-4, what should be written on dental chart?',
     options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
+      { id: 'a', text: 'A (blue)' },
+      { id: 'b', text: 'A (red)' },
+      { id: 'c', text: 'B (red)' },
+      { id: 'd', text: 'B (blue)' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Ergonomic neutral positioning reduces musculoskeletal strain, stress, and chronic fatigue for clinicians.'
+    correctAnswer: 'd',
+    explanation: 'Localized enamel breakdown and underlying dentin shadow (ICDAS 3-4) are charted as B (blue)[cite: 2].'
   },
   {
     id: 29,
-    category: 'Restorative Materials & Isolation',
-    question: 'Advantages of rubber dam include:',
+    category: 'Operative Dentistry',
+    question: 'Diagnosis of fracture: what special test is used?',
     options: [
-      { id: 'a', text: 'good isolation' },
-      { id: 'b', text: 'cross infection control' },
-      { id: 'c', text: 'prevent contamination' },
-      { id: 'd', text: 'prevent instrument swallowed' },
-      { id: 'e', text: 'all above' }
+      { id: 'a', text: 'Thermal test' },
+      { id: 'b', text: 'Electric pulp test' },
+      { id: 'c', text: 'Transillumination' },
+      { id: 'd', text: 'tooth biting sloot' }
     ],
-    correctAnswer: 'e',
-    explanation:
-      'Rubber dam isolation protects the operating field, reduces aerosol cross-infection, and prevents foreign body ingestion.'
+    correctAnswer: 'd',
+    explanation: 'A Tooth Slooth (biting test device) is specifically designed to reproduce pain and locate tooth fractures[cite: 2].'
   },
   {
     id: 30,
-    category: 'Cavity Preparation & Classification',
-    question: 'A full coverage restoration is also called a:',
+    category: 'Operative Dentistry',
+    question: 'ICDAS Radiograph system (proximal): code 1',
     options: [
-      { id: 'a', text: 'Crown' },
-      { id: 'b', text: '1 surface restoration' },
-      { id: 'c', text: '3 surface restoration' },
-      { id: 'd', text: '2 surface restoration' },
-      { id: 'e', text: 'Complex restoration' }
+      { id: 'a', text: 'Radiolucency in outer-half of enamel' },
+      { id: 'b', text: 'Radiolucency in inner-half of enamel' },
+      { id: 'c', text: 'Radiolucency into dentin' },
+      { id: 'd', text: 'No radiolucency' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'A dental crown encases the entire visible coronal portion of a tooth, making it a full coverage restoration.'
+    explanation: 'Radiographic ICDAS code 1 is defined as radiolucency confined to the outer half of enamel[cite: 2].'
   },
   {
     id: 31,
-    category: 'Dental Ergonomics & General',
-    question: 'Which of the following is NOT an Operative Dentistry Objective?',
+    category: 'Operative Dentistry',
+    question: 'What is the most common oral cancer?',
     options: [
-      { id: 'a', text: 'Alteration' },
-      { id: 'b', text: 'Prevent' },
-      { id: 'c', text: 'Identify' },
-      { id: 'd', text: 'Restore' }
+      { id: 'a', text: 'Adenocarcinoma' },
+      { id: 'b', text: 'Squamous cell carcinoma' },
+      { id: 'c', text: 'Melanoma' },
+      { id: 'd', text: 'Lymphoma' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'The primary objectives of operative dentistry are Prevention, Diagnosis/Identification, and Restoration of teeth.'
+    correctAnswer: 'b',
+    explanation: 'Squamous cell carcinoma accounts for over 90% of all oral malignancies[cite: 2].'
   },
   {
     id: 32,
-    category: 'Dental Ergonomics & General',
-    question: 'The name of the LMS we use at UP is:',
+    category: 'Operative Dentistry',
+    question: 'Please choose a correct meaning for symbol in the picture?',
     options: [
-      { id: 'a', text: 'Noodle' },
-      { id: 'b', text: 'Moodle' },
-      { id: 'c', text: 'Google' }
+      { id: 'a', text: 'Amalgam restoration' },
+      { id: 'b', text: 'Composite restoration' },
+      { id: 'c', text: 'Recurrent caries only' },
+      { id: 'd', text: 'Composite Filling with recurrent caries' }
     ],
-    correctAnswer: 'b',
-    explanation:
-      'Moodle is the open-source Learning Management System used by University of Puthisastra.'
+    correctAnswer: 'd',
+    explanation: 'Green outline with red cross-hatching symbolizes an existing composite restoration with recurrent caries[cite: 2].'
   },
   {
     id: 33,
-    category: 'Cavity Preparation & Classification',
-    question: 'A cavity on the proximal surface of incisor or canine that involves the incisal angle is:',
+    category: 'Operative Dentistry',
+    question: 'Basic Periodontal Examination: code 3',
     options: [
-      { id: 'a', text: 'Class I' },
-      { id: 'b', text: 'Class II' },
-      { id: 'c', text: 'Class III' },
-      { id: 'd', text: 'Class IV' },
-      { id: 'e', text: 'Class V' }
+      { id: 'a', text: 'Pocket depth < 3.5mm' },
+      { id: 'b', text: 'Pocket depth > 5.5mm' },
+      { id: 'c', text: 'Furcation involvement' },
+      { id: 'd', text: 'Pocket dept 3.5-5.5mm' }
     ],
     correctAnswer: 'd',
-    explanation:
-      'Class IV cavities involve proximal surfaces of anterior teeth including the incisal edge or angle.'
+    explanation: 'BPE code 3 indicates shallow periodontal pockets measuring 3.5 to 5.5 mm[cite: 2].'
   },
   {
     id: 34,
-    category: 'Diagnosis & Treatment Planning',
-    question: 'Patient with a lack of saliva is at higher risk of dental caries',
+    category: 'Operative Dentistry',
+    question: "Stensen's duct is",
     options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
+      { id: 'a', text: 'Duct of parotid gland' },
+      { id: 'b', text: 'Duct of submandibular gland' },
+      { id: 'c', text: 'Duct of sublingual gland' },
+      { id: 'd', text: 'Minor salivary gland duct' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Saliva provides buffering capacity, remineralizing ions, and antimicrobial clearance; xerostomia dramatically increases caries risk.'
+    explanation: "Stensen's duct is the major excretory duct of the parotid salivary gland[cite: 2]."
   },
   {
     id: 35,
-    category: 'Diagnosis & Treatment Planning',
-    question: 'Which of the following is the most suitable criteria for pulp capping?',
+    category: 'Operative Dentistry',
+    question: 'What is the purpose of using cold test?',
     options: [
-      { id: 'a', text: 'Reversible pulpitis' },
-      { id: 'b', text: 'Irreversible pulpitis' },
-      { id: 'c', text: 'Pulp Necrosis' },
-      { id: 'd', text: 'Periapical infected teeth' }
+      { id: 'a', text: 'Periapical status' },
+      { id: 'b', text: 'pulpal status' },
+      { id: 'c', text: 'Crack line presence' },
+      { id: 'd', text: 'Periodontal ligament health' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Pulp capping is indicated only for vital pulps with reversible pulpitis where inflammation is localized and repairable.'
+    correctAnswer: 'b',
+    explanation: 'Cold testing evaluates pulpal sensory response and vitality[cite: 2].'
   },
   {
     id: 36,
-    category: 'Cavity Preparation & Classification',
-    question: 'Which of the following restorations require a bevel preparation for restoration?',
+    category: 'Operative Dentistry',
+    question: 'Why is care plan necessary? All are true except one.',
     options: [
-      { id: 'a', text: 'Composite' },
-      { id: 'b', text: 'Amalgam' },
-      { id: 'c', text: 'GIC' },
-      { id: 'd', text: 'A and B are correct' },
-      { id: 'e', text: 'A, B, and C are correct' }
+      { id: 'a', text: 'To prioritize treatment sequence' },
+      { id: 'b', text: 'to make it easy for collect payment' },
+      { id: 'c', text: 'To organize comprehensive care' },
+      { id: 'd', text: 'To improve patient communication' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Bevels are prepared in enamel for direct composite restorations to expose enamel rod ends for acid etching and blend color margins.'
+    correctAnswer: 'b',
+    explanation: 'Care planning serves clinical and patient management goals, not financial payment collection convenience[cite: 2].'
   },
   {
     id: 37,
-    category: 'Diagnosis & Treatment Planning',
-    question: 'Instructions after fluoride application',
+    category: 'Operative Dentistry',
+    question: 'Basic Periodontal Examination: furcation involvement Symbol',
     options: [
-      { id: 'a', text: 'Do not drink or eat for at least 30 min after application' },
-      { id: 'b', text: 'Brush after application' },
-      { id: 'c', text: 'Flossing after application' },
-      { id: 'd', text: 'Rinse after application' }
+      { id: 'a', text: 'C' },
+      { id: 'b', text: 'F' },
+      { id: 'c', text: '#' },
+      { id: 'd', text: '*' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Patients should avoid eating, drinking, or rinsing for 30 minutes to maximize topical fluoride uptake into enamel.'
+    correctAnswer: 'd',
+    explanation: 'An asterisk (*) symbol in BPE indicates furcation involvement or a pocket depth >= 6mm[cite: 2].'
   },
   {
     id: 38,
-    category: 'Restorative Materials & Isolation',
-    question: 'Minor defects in a direct restoration always requires total replacement of the material',
+    category: 'Operative Dentistry',
+    question: 'What is the treatment for White spots?',
     options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
+      { id: 'a', text: 'Class I Composite' },
+      { id: 'b', text: 'Crown' },
+      { id: 'c', text: 'Amalgam restoration' },
+      { id: 'd', text: 'Apply tooth mouse' }
     ],
-    correctAnswer: 'b',
-    explanation:
-      'Minor localized defects can often be repaired conservatively rather than replacing the entire restoration, preserving natural tooth structure.'
+    correctAnswer: 'd',
+    explanation: 'Non-cavitated white spot lesions are treated non-invasively using remineralizing agents like Tooth Mousse (CPP-ACP)[cite: 2].'
   },
   {
     id: 39,
-    category: 'Restorative Materials & Isolation',
-    question: 'Which of the following is not a suitable material for pulp capping?',
+    category: 'Operative Dentistry',
+    question: 'Caries risk assessment: Extreme risk mean',
     options: [
-      { id: 'a', text: 'MTA' },
-      { id: 'b', text: 'Biodentine' },
-      { id: 'c', text: 'Calcium Hydroxide (hard setting)' },
-      { id: 'd', text: 'Composite' }
+      { id: 'a', text: 'Low risk + 1 active cavity' },
+      { id: 'b', text: 'Moderate risk + dry mouth' },
+      { id: 'c', text: 'High risk+ Severe salivary gland hypofunction' },
+      { id: 'd', text: 'Multiple cavities without dry mouth' }
     ],
-    correctAnswer: 'd',
-    explanation:
-      'Uncured resin monomers in composite are cytotoxic to dental pulp tissue and should never be placed directly onto exposed pulp.'
+    correctAnswer: 'c',
+    explanation: 'Extreme caries risk classification combines high caries risk with severe salivary gland hypofunction (hyposalivation)[cite: 2].'
   },
   {
     id: 40,
-    category: 'Diagnosis & Treatment Planning',
-    question: 'Which of the following is the BEST and most convenient approach to manage a deep carious lesion in a tooth with reversible pulpitis?',
+    category: 'Operative Dentistry',
+    question: 'ICDAS visual system (occlusal): code 2',
     options: [
-      { id: 'a', text: 'Stepwise excavation' },
-      { id: 'b', text: 'Indirect pulp capping' },
-      { id: 'c', text: 'Pulpotomy' },
-      { id: 'd', text: 'Direct Pulp Capping' },
-      { id: 'e', text: 'Root canal treatment' }
+      { id: 'a', text: 'First visual change in enamel' },
+      { id: 'b', text: 'Distinct visual change in enamel' },
+      { id: 'c', text: 'Localized enamel breakdown' },
+      { id: 'd', text: 'Underlying dark shadow' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Stepwise excavation or selective removal reduces the risk of accidental pulp exposure in extremely deep carious lesions.'
+    correctAnswer: 'b',
+    explanation: 'ICDAS visual code 2 corresponds to a distinct visual change visible on a wet and dry tooth surface[cite: 2].'
   },
   {
     id: 41,
-    category: 'Cavity Preparation & Classification',
-    question: 'Caries located on the proximal surface (without affecting the incisor edge) of an anterior tooth is',
+    category: 'Operative Dentistry',
+    question: 'Interpretation of Plaque index: Fair hygiene',
     options: [
-      { id: 'a', text: 'Class I' },
-      { id: 'b', text: 'Class II' },
-      { id: 'c', text: 'Class III' },
-      { id: 'd', text: 'Class IV' }
+      { id: 'a', text: 'Score 0' },
+      { id: 'b', text: 'Score 0.1-0.9' },
+      { id: 'c', text: 'Score 2.0-3.0' },
+      { id: 'd', text: 'Score 1.0-1.9' }
     ],
-    correctAnswer: 'c',
-    explanation:
-      'Class III cavities affect the proximal surfaces of anterior teeth (incisors and canines) without involving the incisal edge.'
+    correctAnswer: 'd',
+    explanation: 'A plaque index mean score ranging from 1.0 to 1.9 indicates fair oral hygiene[cite: 2].'
   },
   {
     id: 42,
-    category: 'Diagnosis & Treatment Planning',
-    question: 'What is the best method to detect proximal decay?',
+    category: 'Operative Dentistry',
+    question: 'Oral cancer screening should include in periodic examination. True or False?',
     options: [
-      { id: 'a', text: 'bitewing X ray' },
-      { id: 'b', text: 'probing' },
-      { id: 'c', text: 'visual inspection' },
-      { id: 'd', text: 'percussion' },
-      { id: 'e', text: 'PA Xray' }
+      { id: 'a', text: 'True' },
+      { id: 'b', text: 'False' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Bitewing radiographs are the gold standard for detecting interproximal carious lesions hidden below the contact point.'
+    explanation: 'Oral cancer screening is an essential routine component of periodic dental examinations[cite: 2].'
   },
   {
     id: 43,
-    category: 'Cavity Preparation & Classification',
-    question: 'When removing caries with a round low speed bur, the smallest size possible should be used',
+    category: 'Operative Dentistry',
+    question: 'Please choose a correct meaning for symbol in the picture?',
     options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
+      { id: 'a', text: 'Surfacing' },
+      { id: 'b', text: 'Sealant' },
+      { id: 'c', text: 'Sensitivity' },
+      { id: 'd', text: 'Scaling' }
     ],
     correctAnswer: 'b',
-    explanation:
-      'Using the largest comfortable round bur reduces the risk of pinpoint pulpal perforation compared to a small bur.'
+    explanation: 'The letter S charted on the occlusal surface represents a pit and fissure sealant[cite: 2].'
   },
   {
     id: 44,
-    category: 'Cavity Preparation & Classification',
-    question: 'Which of the following are Principles of cavity preparation?',
+    category: 'Operative Dentistry',
+    question: 'ICDAS Radiograph system (proximal): code 3',
     options: [
-      { id: 'a', text: 'Gain access to caries' },
-      { id: 'b', text: 'Removal caries' },
-      { id: 'c', text: 'Cut away all significantly unsupported enamel' },
-      { id: 'd', text: 'Extended margins so that they are accessible for instrumentation and cleaning' },
-      { id: 'e', text: 'All of the above' }
+      { id: 'a', text: 'Radiolucency in enamel' },
+      { id: 'b', text: 'Radiolucency reaching middle 1/3 dentin' },
+      { id: 'c', text: 'Radiolucency into pulp' },
+      { id: 'd', text: 'Radiolucency limit to outer 1/3 of dentin' }
     ],
-    correctAnswer: 'e',
-    explanation:
-      'Principles of cavity preparation encompass gaining access, removing caries, supporting enamel, and extending margins appropriately.'
+    correctAnswer: 'd',
+    explanation: 'Radiographic ICDAS code 3 indicates radiolucency penetrating into the outer third of dentin[cite: 2].'
   },
   {
     id: 45,
-    category: 'Restorative Materials & Isolation',
-    question: 'Rubber dam application technique may include:',
+    category: 'Operative Dentistry',
+    question: 'ICDAS visual system (occlusal): code 6',
     options: [
-      { id: 'a', text: 'Latex first' },
-      { id: 'b', text: 'Clamp first' },
-      { id: 'c', text: 'Rubber dam and clamp at the same time' },
-      { id: 'd', text: 'floss first' },
-      { id: 'e', text: 'A, B, and C are correct' },
-      { id: 'f', text: 'All of the above' }
+      { id: 'a', text: 'Distinct cavity with visible dentin' },
+      { id: 'b', text: 'Extensive distinct cavity with visible dentin' },
+      { id: 'c', text: 'Localized enamel breakdown' },
+      { id: 'd', text: 'First visual change' }
     ],
-    correctAnswer: 'e',
-    explanation:
-      'Standard techniques for placing a rubber dam include clamp first, dam first, or dam and clamp simultaneously.'
+    correctAnswer: 'b',
+    explanation: 'ICDAS visual code 6 represents an extensive distinct cavity involving more than half of the tooth surface[cite: 2].'
   },
   {
     id: 46,
-    category: 'Restorative Materials & Isolation',
-    question: 'Pit and fissure sealant is an effective method for preventing occlusal caries',
+    category: 'Operative Dentistry',
+    question: "British standard institute's classification is used for identify molar relationship. True or false?",
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Pit and fissure sealants create a physical barrier preventing food debris and plaque entrapment in deep anatomical grooves.'
+    correctAnswer: 'b',
+    explanation: 'British Standards Institute classification classifies incisor relationships, not molar relationships[cite: 2].'
   },
   {
     id: 47,
-    category: 'Restorative Materials & Isolation',
-    question: 'One disadvantage of Cention-N is that it requires addition tooth preparation to provide retention for material',
+    category: 'Operative Dentistry',
+    question: 'ICDAS visual system (occlusal): code 3',
     options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
+      { id: 'a', text: 'First visual change' },
+      { id: 'b', text: 'Distinct visual change' },
+      { id: 'c', text: 'Underlying dentin shadow' },
+      { id: 'd', text: 'Localized enamel breakdown (Without clinical sign of dentinal involvement)' }
     ],
-    correctAnswer: 'b',
-    explanation:
-      'Cention-N does not strictly require additional aggressive mechanical retentive tooth preparation compared to traditional materials.'
+    correctAnswer: 'd',
+    explanation: 'ICDAS visual code 3 denotes localized micro-cavitation/enamel breakdown without visible dentin[cite: 2].'
   },
   {
     id: 48,
-    category: 'Diagnosis & Treatment Planning',
-    question: 'The deep caries on the floor of the lesion can sometime left behind in order to prevent mechanical exposure of the pulp',
+    category: 'Operative Dentistry',
+    question: 'ICDAS Radiograph system (proximal): code 4',
+    options: [
+      { id: 'a', text: 'Radiolucency in inner enamel' },
+      { id: 'b', text: 'Radiolucency in outer 1/3 dentin' },
+      { id: 'c', text: 'Radiolucency reaching to middle 1/3 of dentin' },
+      { id: 'd', text: 'Radiolucency into pulp' }
+    ],
+    correctAnswer: 'c',
+    explanation: 'Radiographic ICDAS code 4 represents radiolucency extending into the middle third of dentin[cite: 2].'
+  },
+  {
+    id: 49,
+    category: 'Operative Dentistry',
+    question: 'Which of the following papillae specifically only found on lateral border of the tongue?',
+    options: [
+      { id: 'a', text: 'Filiform papillae' },
+      { id: 'b', text: 'Fungiform papillae' },
+      { id: 'c', text: 'foliate papillae' },
+      { id: 'd', text: 'Circumvallate papillae' }
+    ],
+    correctAnswer: 'c',
+    explanation: 'Foliate papillae exist as vertical folds restricted to the posterolateral margins of the tongue[cite: 2].'
+  },
+  {
+    id: 50,
+    category: 'Operative Dentistry',
+    question: 'Please choose a correct meaning for symbol in the picture?',
+    options: [
+      { id: 'a', text: 'Post and core' },
+      { id: 'b', text: 'Root canal treatment' },
+      { id: 'c', text: 'Crown filling' },
+      { id: 'd', text: 'Implant post' }
+    ],
+    correctAnswer: 'a',
+    explanation: 'A crown outline connected to a post inside the root space symbolizes a post and core restoration[cite: 2].'
+  },
+  {
+    id: 51,
+    category: 'Operative Dentistry',
+    question: 'Most common nerve found in dental pulp',
+    options: [
+      { id: 'a', text: 'A-beta fiber' },
+      { id: 'b', text: 'A-delta fiber' },
+      { id: 'c', text: 'C-fiber' },
+      { id: 'd', text: 'Sympathetic fiber' }
+    ],
+    correctAnswer: 'b',
+    explanation: 'A-delta fibers are the primary myelinated sensory nerve fibers located at the pulp-dentin border[cite: 2].'
+  },
+  {
+    id: 52,
+    category: 'Operative Dentistry',
+    question: 'Interpretation of Plaque index: Good hygiene',
+    options: [
+      { id: 'a', text: 'score 0' },
+      { id: 'b', text: 'score 1.0-1.9' },
+      { id: 'c', text: 'score 0.1-0.9' },
+      { id: 'd', text: 'score 2.0-3.0' }
+    ],
+    correctAnswer: 'c',
+    explanation: 'A plaque index mean score from 0.1 to 0.9 indicates good oral hygiene[cite: 2].'
+  },
+  {
+    id: 53,
+    category: 'Operative Dentistry',
+    question: 'ICDAS visual system (occlusal): code 1',
+    options: [
+      { id: 'a', text: 'first visual change in enamel' },
+      { id: 'b', text: 'Distinct visual change in enamel' },
+      { id: 'c', text: 'Enamel breakdown' },
+      { id: 'd', text: 'Dentin cavity' }
+    ],
+    correctAnswer: 'a',
+    explanation: 'ICDAS visual code 1 is characterized as the first visual change in enamel visible only after prolonged air drying[cite: 2].'
+  },
+  {
+    id: 54,
+    category: 'Operative Dentistry',
+    question: 'Present of white spots, bottle feeding, visible caries are the risk factor and indicators for caries risk assessment. True or False?',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Selective caries removal allows leaving affected dentine over the pulp floor to prevent iatrogenic pulp exposure.'
-  },
-  {
-    id: 49,
-    category: 'Restorative Materials & Isolation',
-    question: 'Rubber dam set includes all of the following except:',
-    options: [
-      { id: 'a', text: 'Rubber dam punch' },
-      { id: 'b', text: 'Rubber dam frame' },
-      { id: 'c', text: 'Rubber dam clamp' },
-      { id: 'd', text: 'Rubber dam clamp holder' },
-      { id: 'e', text: 'Matrix band' }
-    ],
-    correctAnswer: 'e',
-    explanation:
-      'A matrix band is used for restoring proximal walls during cavity filling, not as part of the rubber dam isolation kit.'
-  },
-  {
-    id: 50,
-    category: 'Diagnosis & Treatment Planning',
-    question: 'The most accurate way to detect proximal caries in posterior teeth is with:',
-    options: [
-      { id: 'a', text: 'Occlusal Radiograph' },
-      { id: 'b', text: 'Bitewing radiograph' },
-      { id: 'c', text: 'Panoramic radiograph' },
-      { id: 'd', text: 'A and B are correct' },
-      { id: 'e', text: 'A, B, and C are correct' }
-    ],
-    correctAnswer: 'b',
-    explanation:
-      'Bitewing radiographs provide minimal overlap and optimal geometry for identifying proximal enamel and dentine caries.'
-  },
-  {
-    id: 51,
-    category: 'Restorative Materials & Isolation',
-    question: 'What types of burs are best for polishing composite?',
-    options: [
-      { id: 'a', text: 'Diamond bur' },
-      { id: 'b', text: 'Silicone bur' },
-      { id: 'c', text: 'Carbide bur' }
-    ],
-    correctAnswer: 'b',
-    explanation:
-      'Silicone rubber polishers produce a smooth, high-luster surface on composite restorations.'
-  },
-  {
-    id: 52,
-    category: 'Dental Ergonomics & General',
-    question: 'Which of the following is not one of the international tooth notation systems?',
-    options: [
-      { id: 'a', text: 'FDI' },
-      { id: 'b', text: 'ADA' },
-      { id: 'c', text: 'Palmer' },
-      { id: 'd', text: 'ICDAS' }
-    ],
-    correctAnswer: 'd',
-    explanation:
-      'ICDAS (International Caries Detection and Assessment System) is a caries scoring system, not a tooth notation system.'
-  },
-  {
-    id: 53,
-    category: 'Dental Ergonomics & General',
-    question: 'Maxillofacial trauma that requires open fixation and closed reduction is in the scope of Operative Dentistry.',
-    options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
-    ],
-    correctAnswer: 'b',
-    explanation:
-      'Surgical management of maxillofacial fractures falls under Oral and Maxillofacial Surgery (OMFS), not Operative Dentistry.'
-  },
-  {
-    id: 54,
-    category: 'Restorative Materials & Isolation',
-    question: 'Which of the following materials is not recommended for a large Class II restoration in a permanent tooth?',
-    options: [
-      { id: 'a', text: 'Composite' },
-      { id: 'b', text: 'Amalgam' },
-      { id: 'c', text: 'GIC' },
-      { id: 'd', text: 'Cention N' }
-    ],
-    correctAnswer: 'c',
-    explanation:
-      'Conventional GIC lacks sufficient fracture toughness and flexural strength for high stress-bearing, large Class II load-bearing restorations.'
+    explanation: 'White spots, early childhood bottle feeding, and clinical caries are primary indicators used in caries risk assessment[cite: 2].'
   }
 ];

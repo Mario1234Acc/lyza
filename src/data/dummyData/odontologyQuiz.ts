@@ -3,19 +3,18 @@ import type { QuizQuestion } from './types';
 export const odontologyQuizQuestions: QuizQuestion[] = [
   {
     id: 1,
-    category: 'Diagnosis & Treatment Planning',
-    question: 'Surgical crown lengthening sometime is needed in order to manage subgingival caries',
+    category: 'Conservative Dentistry',
+    question: 'Surgical crown lengthening sometime is needed in other to manage subgingival caries',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Surgical crown lengthening exposes sound tooth structure apical to subgingival caries margins to allow proper isolation and restoration.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 2,
-    category: 'Cavity Preparation & Classification',
+    category: 'Conservative Dentistry',
     question: 'Bevel are the variation which are created during cavity preparation to help:',
     options: [
       { id: 'a', text: 'prevent marginal leakage' },
@@ -24,13 +23,12 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'd', text: 'A and B are correct' },
       { id: 'e', text: 'A, B, and C are correct' }
     ],
-    correctAnswer: 'd',
-    explanation:
-      'Bevels increase bonding surface area, improving retention and reducing marginal leakage in adhesive restorations.'
+    correctAnswer: 'a',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 3,
-    category: 'Diagnosis & Treatment Planning',
+    category: 'Conservative Dentistry',
     question: 'All these are examples of NCCL except',
     options: [
       { id: 'a', text: 'Dental caries' },
@@ -38,26 +36,24 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'c', text: 'Tooth wear' },
       { id: 'd', text: 'Trauma' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'NCCL stands for Non-Carious Cervical Lesions (e.g., abrasion, erosion, abfraction). Dental caries is a carious lesion.'
+    correctAnswer: 'b',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 4,
-    category: 'Restorative Materials & Isolation',
+    category: 'Conservative Dentistry',
     question: 'Which clamp use for molar quadrant I and III',
     options: [
       { id: 'a', text: '12A' },
       { id: 'b', text: '13A' },
       { id: 'c', text: '#9' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Rubber dam clamp 12A is specifically designed with serrated jaws for upper right (Quadrant I) and lower left (Quadrant III) molars.'
+    correctAnswer: 'c',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 5,
-    category: 'Restorative Materials & Isolation',
+    category: 'Conservative Dentistry',
     question: 'Which of the following materials has the best esthetic outcome?',
     options: [
       { id: 'a', text: 'Composite' },
@@ -65,65 +61,57 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'c', text: 'GIC' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Composite resins match natural tooth shades, translucency, and polishability better than GIC or metallic amalgam.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 6,
-    category: 'Cavity Preparation & Classification',
+    category: 'Conservative Dentistry',
     question: 'Unsupported enamel should be removed during cavity preparation',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Unsupported enamel prisms are prone to fracture under occlusal forces and should be removed or supported by adhesive materials.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 7,
-    category: 'Diagnosis & Treatment Planning',
-    question:
-      'Interdental papilla and Gingival/Cervical embrasure are exactly the same thing',
-    options: [
-      { id: 'a', text: 'True' },
-      { id: 'b', text: 'False' }
-    ],
-    correctAnswer: 'b',
-    explanation:
-      'The cervical embrasure is the anatomical interproximal space apical to the contact point, whereas the interdental papilla is the soft tissue occupant of that space.'
-  },
-  {
-    id: 8,
-    category: 'Restorative Materials & Isolation',
-    question:
-      'Flowable composite restorations can be easy to use and enhance esthetics, however they are weaker than condensable composite restorations',
+    category: 'Conservative Dentistry',
+    question: 'Interdental papilla and Gingival/Cervical embrasure are exactly the same thing',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Flowable composites have lower filler content, resulting in lower mechanical strength and higher polymerization shrinkage than packable composites.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
+  },
+  {
+    id: 8,
+    category: 'Conservative Dentistry',
+    question: 'Flowable composite restorations can be easy to use and enhance esthetics, however they are weaker than condensable composite restorations',
+    options: [
+      { id: 'a', text: 'True' },
+      { id: 'b', text: 'False' }
+    ],
+    correctAnswer: 'a',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 9,
-    category: 'Dental Ergonomics & General',
+    category: 'Conservative Dentistry',
     question: 'The best position for patient during dental treatment is',
     options: [
       { id: 'a', text: 'Supine (flat)' },
       { id: 'b', text: 'Upright' },
       { id: 'c', text: '45% semi supine' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Supine position is generally recommended for operating on the maxillary arch and standard ergonomic positioning.'
+    correctAnswer: 'c',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 11,
-    category: 'Restorative Materials & Isolation',
-    question:
-      'A prepared cavity is best protected from moisture during restoration placement by',
+    category: 'Conservative Dentistry',
+    question: 'A prepared cavity is best protected from moisture during restoration placement by',
     options: [
       { id: 'a', text: 'Cotton rolls' },
       { id: 'b', text: 'Saliva Ejector' },
@@ -132,26 +120,24 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'e', text: 'All of the above' }
     ],
     correctAnswer: 'c',
-    explanation:
-      'Rubber dam is the gold standard for absolute isolation, preventing saliva, moisture, and breath humidity from contaminating the cavity.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 12,
-    category: 'Restorative Materials & Isolation',
-    question: 'Bulk Fill composite can be cured up to __mm per increment',
+    category: 'Conservative Dentistry',
+    question: 'Bulk Fill composite can be cured up to ___mm per increment',
     options: [
       { id: 'a', text: '3' },
       { id: 'b', text: '2' },
       { id: 'c', text: '1' },
       { id: 'd', text: '4' }
     ],
-    correctAnswer: 'd',
-    explanation:
-      'Bulk fill composite resins are specially formulated with higher translucency and photo-initiators allowing incremental curing up to 4 mm.'
+    correctAnswer: 'b',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 13,
-    category: 'Cavity Preparation & Classification',
+    category: 'Conservative Dentistry',
     question: 'How many walls of the cavity class I?',
     options: [
       { id: 'a', text: '3' },
@@ -160,12 +146,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'd', text: '6' }
     ],
     correctAnswer: 'c',
-    explanation:
-      'A standard simple Class I occlusal cavity preparation has 5 walls: Mesial, Distal, Buccal, Lingual, and Pulpal floor.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 14,
-    category: 'Restorative Materials & Isolation',
+    category: 'Conservative Dentistry',
     question: 'What is the aim of Isolation?',
     options: [
       { id: 'a', text: 'Moisture control' },
@@ -174,40 +159,35 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'd', text: 'All of the above' }
     ],
     correctAnswer: 'd',
-    explanation:
-      'Isolation achieves moisture control, soft tissue retraction, visual clarity, and patient safety from accidental aspiration.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 15,
-    category: 'Restorative Materials & Isolation',
-    question:
-      'Which of the following restorations require mechanical retention (undercut) preparation to lock the restoration in the cavity?',
+    category: 'Conservative Dentistry',
+    question: 'Which of the following restorations require mechanical retention (undercut) preparation to lock the restoration in the cavity?',
     options: [
       { id: 'a', text: 'Composite' },
       { id: 'b', text: 'Amalgam' },
       { id: 'c', text: 'GIC' }
     ],
     correctAnswer: 'b',
-    explanation:
-      'Amalgam does not bond adhesively to tooth structure and relies strictly on mechanical retention features like undercuts.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 16,
-    category: 'Cavity Preparation & Classification',
+    category: 'Conservative Dentistry',
     question: 'The high speed round bur is best for removing soft caries in the dentin',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
     correctAnswer: 'b',
-    explanation:
-      'Low speed round burs or hand excavators are preferred for soft dentine caries removal to prevent over-preparation and pulpal exposure.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 17,
-    category: 'Cavity Preparation & Classification',
-    question:
-      'Carious process effected proximal (Mesial and Distal) surfaces of the posterior teeth',
+    category: 'Conservative Dentistry',
+    question: 'Carious process effected proximal (Mesial and Distal) surfaces of the posterior teeth',
     options: [
       { id: 'a', text: 'Class I' },
       { id: 'b', text: 'Class II' },
@@ -216,12 +196,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'e', text: 'Class V' }
     ],
     correctAnswer: 'b',
-    explanation:
-      "Black's Class II cavities involve the proximal surfaces (mesial/distal) of posterior teeth (premolars and molars)."
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 18,
-    category: 'Restorative Materials & Isolation',
+    category: 'Conservative Dentistry',
     question: 'Which of the following material has a fluoride releasing property?',
     options: [
       { id: 'a', text: 'Composite' },
@@ -229,12 +208,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'c', text: 'GIC' }
     ],
     correctAnswer: 'c',
-    explanation:
-      'Glass Ionomer Cement (GIC) releases fluoride over time, aiding in remineralization and preventing secondary caries.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 19,
-    category: 'Cavity Preparation & Classification',
+    category: 'Conservative Dentistry',
     question: 'A tunnel preparation is suitable for which situation?',
     options: [
       { id: 'a', text: 'Occlusal caries' },
@@ -243,37 +221,34 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'd', text: 'Shallow proximal caries (R4) on a premolar' },
       { id: 'e', text: 'All of the above' }
     ],
-    correctAnswer: 'd',
-    explanation:
-      'Tunnel preparation is a conservative approach intended for small, shallow proximal lesions in posterior teeth while preserving the marginal ridge.'
+    correctAnswer: 'c',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 20,
-    category: 'Diagnosis & Treatment Planning',
+    category: 'Conservative Dentistry',
     question: 'Enamel is more resistant to the progress of dental caries than dentine',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Enamel is 96% mineralized hydroxyapatite and resists acid dissolution much longer than organic-rich dentine (70% mineralized).'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 21,
-    category: 'Diagnosis & Treatment Planning',
+    category: 'Conservative Dentistry',
     question: 'Subgingival caries and root caries are the same thing',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
-    correctAnswer: 'b',
-    explanation:
-      'Subgingival caries refers to location below the free gingival margin, while root caries refers specifically to lesions originating on root surface.'
+    correctAnswer: 'a',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 22,
-    category: 'Restorative Materials & Isolation',
+    category: 'Conservative Dentistry',
     question: 'Which of the following is/are an indication for GIC usage?',
     options: [
       { id: 'a', text: 'Class I, III and Class V restorations' },
@@ -284,26 +259,23 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'f', text: 'All of the above' }
     ],
     correctAnswer: 'f',
-    explanation:
-      'GIC is versatile and used for restorative fillings, luting cement, sealants, liners/bases, and ART in community health.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 23,
-    category: 'Restorative Materials & Isolation',
-    question:
-      'To minimize composite shrinkage during light curing, which of the following methods is not effective?',
+    category: 'Conservative Dentistry',
+    question: 'To minimize composite shrinkage during light curing, which of the following methods is not effective?',
     options: [
       { id: 'a', text: 'Incremental placement' },
       { id: 'b', text: 'maximum 2mm of each incremental layer' },
       { id: 'c', text: 'increase light cure duration' }
     ],
     correctAnswer: 'c',
-    explanation:
-      'Increasing cure duration increases total conversion but does not reduce volumetric shrinkage; incremental layering reduces shrinkage stress.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 24,
-    category: 'Cavity Preparation & Classification',
+    category: 'Conservative Dentistry',
     question: 'To make a good shape of cavity preparation requires:',
     options: [
       { id: 'a', text: 'Knowledge of anatomy' },
@@ -313,12 +285,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'e', text: 'A, B, and C are correct' }
     ],
     correctAnswer: 'e',
-    explanation:
-      'Proper cavity preparation requires understanding tooth anatomy, precise depth control, and bur angulation to preserve tooth structure.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 25,
-    category: 'Restorative Materials & Isolation',
+    category: 'Conservative Dentistry',
     question: 'A contraindication for placing a GIC pit and fissure sealant is',
     options: [
       { id: 'a', text: 'Caries code 1' },
@@ -326,24 +297,22 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'c', text: 'Caries code 4' }
     ],
     correctAnswer: 'c',
-    explanation:
-      'ICDAS Code 4 indicates underlying dark shadow from dentine with or without localized enamel breakdown, requiring operative restoration rather than a sealant.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 26,
-    category: 'Dental Ergonomics & General',
+    category: 'Conservative Dentistry',
     question: 'Good posture during dental treatment can minimize fatigue for dentist',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Ergonomic neutral positioning reduces musculoskeletal strain, stress, and chronic fatigue for clinicians.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 27,
-    category: 'Restorative Materials & Isolation',
+    category: 'Conservative Dentistry',
     question: 'Advantages of rubber dam include:',
     options: [
       { id: 'a', text: 'good isolation' },
@@ -353,12 +322,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'e', text: 'all above' }
     ],
     correctAnswer: 'e',
-    explanation:
-      'Rubber dam isolation protects the operating field, reduces aerosol cross-infection, and prevents foreign body ingestion.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 28,
-    category: 'Cavity Preparation & Classification',
+    category: 'Conservative Dentistry',
     question: 'A full coverage restoration is also called a:',
     options: [
       { id: 'a', text: 'Crown' },
@@ -368,12 +336,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'e', text: 'Complex restoration' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'A dental crown encases the entire visible coronal portion of a tooth, making it a full coverage restoration.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 29,
-    category: 'Dental Ergonomics & General',
+    category: 'Conservative Dentistry',
     question: 'Which of the following is NOT an Operative Dentistry Objective?',
     options: [
       { id: 'a', text: 'Alteration' },
@@ -382,12 +349,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'd', text: 'Restore' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'The primary objectives of operative dentistry are Prevention, Diagnosis/Identification, and Restoration of teeth.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 30,
-    category: 'Dental Ergonomics & General',
+    category: 'Conservative Dentistry',
     question: 'The name of the LMS we use at UP is:',
     options: [
       { id: 'a', text: 'Noodle' },
@@ -395,14 +361,12 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'c', text: 'Google' }
     ],
     correctAnswer: 'b',
-    explanation:
-      'Moodle is the open-source Learning Management System used by University of Puthisastra.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 31,
-    category: 'Cavity Preparation & Classification',
-    question:
-      'A cavity on the proximal surface of incisor or canine that involves the incisal angle is:',
+    category: 'Conservative Dentistry',
+    question: 'A cavity on the proximal surface of incisor or canine that involves the incisal angle is:',
     options: [
       { id: 'a', text: 'Class I' },
       { id: 'b', text: 'Class II' },
@@ -411,24 +375,22 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'e', text: 'Class V' }
     ],
     correctAnswer: 'd',
-    explanation:
-      'Class IV cavities involve proximal surfaces of anterior teeth including the incisal edge or angle.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 32,
-    category: 'Diagnosis & Treatment Planning',
+    category: 'Conservative Dentistry',
     question: 'Patient with a lack of saliva is at higher risk of dental caries',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Saliva provides buffering capacity, remineralizing ions, and antimicrobial clearance; xerostomia dramatically increases caries risk.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 33,
-    category: 'Diagnosis & Treatment Planning',
+    category: 'Conservative Dentistry',
     question: 'Which of the following is the most suitable criteria for pulp capping?',
     options: [
       { id: 'a', text: 'Reversible pulpitis' },
@@ -437,12 +399,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'd', text: 'Periapical infected teeth' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Pulp capping is indicated only for vital pulps with reversible pulpitis where inflammation is localized and repairable.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 34,
-    category: 'Cavity Preparation & Classification',
+    category: 'Conservative Dentistry',
     question: 'Which of the following restorations require a bevel preparation for restoration?',
     options: [
       { id: 'a', text: 'Composite' },
@@ -452,12 +413,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'e', text: 'A, B, and C are correct' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Bevels are prepared in enamel for direct composite restorations to expose enamel rod ends for acid etching and blend color margins.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 35,
-    category: 'Diagnosis & Treatment Planning',
+    category: 'Conservative Dentistry',
     question: 'Instructions after fluoride application',
     options: [
       { id: 'a', text: 'Do not drink or eat for at least 30 min after application' },
@@ -466,25 +426,22 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'd', text: 'Rinse after application' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Patients should avoid eating, drinking, or rinsing for 30 minutes to maximize topical fluoride uptake into enamel.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 36,
-    category: 'Restorative Materials & Isolation',
-    question:
-      'Minor defects in a direct restoration always requires total replacement of the material',
+    category: 'Conservative Dentistry',
+    question: 'Minor defects in a direct restoration always requires total replacement of the material',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
     correctAnswer: 'b',
-    explanation:
-      'Minor localized defects can often be repaired conservatively rather than replacing the entire restoration, preserving natural tooth structure.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 37,
-    category: 'Restorative Materials & Isolation',
+    category: 'Conservative Dentistry',
     question: 'Which of the following is not a suitable material for pulp capping?',
     options: [
       { id: 'a', text: 'MTA' },
@@ -493,14 +450,12 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'd', text: 'Composite' }
     ],
     correctAnswer: 'd',
-    explanation:
-      'Uncured resin monomers in composite are cytotoxic to dental pulp tissue and should never be placed directly onto exposed pulp.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 38,
-    category: 'Diagnosis & Treatment Planning',
-    question:
-      'Which of the following is the BEST and most convenient approach to manage a deep carious lesion in a tooth with reversible pulpitis?',
+    category: 'Conservative Dentistry',
+    question: 'Which of the following is the BEST and most convenient approach to manage a deep carious lesion in a tooth with reversible pulpitis?',
     options: [
       { id: 'a', text: 'Stepwise excavation' },
       { id: 'b', text: 'Indirect pulp capping' },
@@ -509,14 +464,12 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'e', text: 'Root canal treatment' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Stepwise excavation or selective removal reduces the risk of accidental pulp exposure in extremely deep carious lesions.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 39,
-    category: 'Cavity Preparation & Classification',
-    question:
-      'Caries located on the proximal surface (without affecting the incisor edge) of an anterior tooth is',
+    category: 'Conservative Dentistry',
+    question: 'Caries located on the proximal surface (without affecting the incisor edge) of an anterior tooth is',
     options: [
       { id: 'a', text: 'Class I' },
       { id: 'b', text: 'Class II' },
@@ -524,12 +477,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'd', text: 'Class IV' }
     ],
     correctAnswer: 'c',
-    explanation:
-      'Class III cavities affect the proximal surfaces of anterior teeth (incisors and canines) without involving the incisal edge.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 40,
-    category: 'Diagnosis & Treatment Planning',
+    category: 'Conservative Dentistry',
     question: 'What is the best method to detect proximal decay?',
     options: [
       { id: 'a', text: 'bitewing X ray' },
@@ -539,25 +491,22 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'e', text: 'PA Xray' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Bitewing radiographs are the gold standard for detecting interproximal carious lesions hidden below the contact point.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 41,
-    category: 'Cavity Preparation & Classification',
-    question:
-      'When removing caries with a round low speed bur, the smallest size possible should be used',
+    category: 'Conservative Dentistry',
+    question: 'When removing caries with a round low speed bur, the smallest size possible should be used',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
     correctAnswer: 'b',
-    explanation:
-      'Using the largest comfortable round bur reduces the risk of pinpoint pulpal perforation compared to a small bur.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 42,
-    category: 'Cavity Preparation & Classification',
+    category: 'Conservative Dentistry',
     question: 'Which of the following are Principles of cavity preparation?',
     options: [
       { id: 'a', text: 'Gain access to caries' },
@@ -567,12 +516,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'e', text: 'All of the above' }
     ],
     correctAnswer: 'e',
-    explanation:
-      'Principles of cavity preparation encompass gaining access, removing caries, supporting enamel, and extending margins appropriately.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 43,
-    category: 'Restorative Materials & Isolation',
+    category: 'Conservative Dentistry',
     question: 'Rubber dam application technique may include:',
     options: [
       { id: 'a', text: 'Latex first' },
@@ -582,51 +530,45 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'e', text: 'A, B, and C are correct' },
       { id: 'f', text: 'All of the above' }
     ],
-    correctAnswer: 'e',
-    explanation:
-      'Standard techniques for placing a rubber dam include clamp first, dam first, or dam and clamp simultaneously.'
+    correctAnswer: 'f',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 44,
-    category: 'Restorative Materials & Isolation',
+    category: 'Conservative Dentistry',
     question: 'Pit and fissure sealant is an effective method for preventing occlusal caries',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
     correctAnswer: 'a',
-    explanation:
-      'Pit and fissure sealants create a physical barrier preventing food debris and plaque entrapment in deep anatomical grooves.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 45,
-    category: 'Restorative Materials & Isolation',
-    question:
-      'One disadvantage of Cention-N is that it requires addition tooth preparation to provide retention for material',
+    category: 'Conservative Dentistry',
+    question: 'One disadvantage of Cention-N is that it requires addition tooth preparation to provide retention for material',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
     correctAnswer: 'b',
-    explanation:
-      'Cention-N does not strictly require additional aggressive mechanical retentive tooth preparation compared to traditional materials.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 46,
-    category: 'Diagnosis & Treatment Planning',
-    question:
-      'The deep caries on the floor of the lesion can sometime left behind in order to prevent mechanical exposure of the pulp',
+    category: 'Conservative Dentistry',
+    question: 'The deep caries on the floor of the lesion can sometime left behind in order to prevent mechanical exposure of the pulp',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
-    correctAnswer: 'a',
-    explanation:
-      'Selective caries removal allows leaving affected dentine over the pulp floor to prevent iatrogenic pulp exposure.'
+    correctAnswer: 'b',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 47,
-    category: 'Restorative Materials & Isolation',
+    category: 'Conservative Dentistry',
     question: 'Rubber dam set includes all of the following except:',
     options: [
       { id: 'a', text: 'Rubber dam punch' },
@@ -636,12 +578,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'e', text: 'Matrix band' }
     ],
     correctAnswer: 'e',
-    explanation:
-      'A matrix band is used for restoring proximal walls during cavity filling, not as part of the rubber dam isolation kit.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 48,
-    category: 'Diagnosis & Treatment Planning',
+    category: 'Conservative Dentistry',
     question: 'The most accurate way to detect proximal caries in posterior teeth is with:',
     options: [
       { id: 'a', text: 'Occlusal Radiograph' },
@@ -651,12 +592,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'e', text: 'A, B, and C are correct' }
     ],
     correctAnswer: 'b',
-    explanation:
-      'Bitewing radiographs provide minimal overlap and optimal geometry for identifying proximal enamel and dentine caries.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 49,
-    category: 'Restorative Materials & Isolation',
+    category: 'Conservative Dentistry',
     question: 'What types of burs are best for polishing composite?',
     options: [
       { id: 'a', text: 'Diamond bur' },
@@ -664,12 +604,11 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'c', text: 'Carbide bur' }
     ],
     correctAnswer: 'b',
-    explanation:
-      'Silicone rubber polishers produce a smooth, high-luster surface on composite restorations.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 50,
-    category: 'Dental Ergonomics & General',
+    category: 'Conservative Dentistry',
     question: 'Which of the following is not one of the international tooth notation systems?',
     options: [
       { id: 'a', text: 'FDI' },
@@ -678,27 +617,23 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'd', text: 'ICDAS' }
     ],
     correctAnswer: 'd',
-    explanation:
-      'ICDAS (International Caries Detection and Assessment System) is a caries scoring system, not a tooth notation system.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 51,
-    category: 'Dental Ergonomics & General',
-    question:
-      'Maxillofacial trauma that requires open fixation and closed reduction is in the scope of Operative Dentistry.',
+    category: 'Conservative Dentistry',
+    question: 'Maxillofacial trauma that requires open fixation and closed reduction is in the scope of Operative Dentistry.',
     options: [
       { id: 'a', text: 'True' },
       { id: 'b', text: 'False' }
     ],
-    correctAnswer: 'b',
-    explanation:
-      'Surgical management of maxillofacial fractures falls under Oral and Maxillofacial Surgery (OMFS), not Operative Dentistry.'
+    correctAnswer: 'a',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   },
   {
     id: 52,
-    category: 'Restorative Materials & Isolation',
-    question:
-      'Which of the following materials is not recommended for a large Class II restoration in a permanent tooth?',
+    category: 'Conservative Dentistry',
+    question: 'Which of the following materials is not recommended for a large Class II restoration in a permanent tooth?',
     options: [
       { id: 'a', text: 'Composite' },
       { id: 'b', text: 'Amalgam' },
@@ -706,7 +641,41 @@ export const odontologyQuizQuestions: QuizQuestion[] = [
       { id: 'd', text: 'Cention N' }
     ],
     correctAnswer: 'c',
-    explanation:
-      'Conventional GIC lacks sufficient fracture toughness and flexural strength for high stress-bearing, large Class II load-bearing restorations.'
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
+  },
+  {
+    id: 53,
+    category: 'Conservative Dentistry',
+    question: 'Which of the following is not considered as a "PREVENTIVE PROCEDURE"?',
+    options: [
+      { id: 'a', text: 'Cutting and filling the cavity' },
+      { id: 'b', text: 'Fluoride Varnish' },
+      { id: 'c', text: 'Oral hygiene education' },
+      { id: 'd', text: 'Dietary habit education' }
+    ],
+    correctAnswer: 'a',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
+  },
+  {
+    id: 54,
+    category: 'Conservative Dentistry',
+    question: 'A PRR does NOT involve cutting a cavity?',
+    options: [
+      { id: 'a', text: 'True' },
+      { id: 'b', text: 'False' }
+    ],
+    correctAnswer: 'a',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
+  },
+  {
+    id: 55,
+    category: 'Conservative Dentistry',
+    question: 'A carious pulpal exposure occurs when the activity of dental caries is faster than the defense mechanisms of the pulp tissue',
+    options: [
+      { id: 'a', text: 'True' },
+      { id: 'b', text: 'False' }
+    ],
+    correctAnswer: 'b',
+    explanation: 'Extracted from the DD Y3 AY20-21 Exams[cite: 1].'
   }
-] as QuizQuestion[];
+];
